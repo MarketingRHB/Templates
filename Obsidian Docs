@@ -1,0 +1,4621 @@
+##
+
+## Obsidian Help
+
+### Start here
+
+Hi there! I’m a note in your vault.
+
+At the same time, I’m also just a Markdown file sitting on your hard disk. It’s all in plain text, so you don’t need to
+worry about losing me in case [Obsidian] disappears one day.
+
+## Quick Start
+
+If you’re in a hurry, here’s some quick places to dive in
+
+```
+The [Command palette] contains most of the commands you need to work with Obsidian. Just press
+CtrlCmd-P and start typing.
+How to [[Create notescreate new notes]].
+How to create [[Internal linkinternal links]]
+How to use Markdown to [Format your notes]
+How to [embed files], or embed other notes
+[Use hotkeys]
+How to [[Working with multiple notesopen multiple files side by side]]
+Obsidian can be extended with [[Core pluginsplugins]]. Several are available by default, and can be
+enabled or disabled according to your needs.
+```
+If you want a more thorough introduction, including a bit about our philosophy, check out [Obsidian].
+
+And if you’d like a gentle introduction, or just want to get started but don’t know how, head over to [Basic note
+taking].
+
+If you are a Catalyst supporter, and want to turn on Insider Builds, see [Insider builds].
+
+## Workflows
+
+Obsidian is a tool that can be used in many ways, from a simple list of notes to a very powerful knowledge
+management system. We suggest you start at your own pace, and build it into the tool you need.
+
+Here are a few ways to get started
+
+If you want to just start taking notes, check out [Basic note taking]
+
+If you already have a collection of notes in markdown format, just choose them for your Vault. Choose “Vault” in
+the lower left and select the directory your notes are in.
+
+If you have notes from Roam Research, Notion, or other systems, [[Import datahere’s how to import them]].
+
+
+If you’d like to know more about Obsidian, you can [[Obsidianread about our story]].
+
+By the way, you can feel free to edit these help docs, but when you open it again, they will be overwritten. So,
+don’t put anything in them you want to keep.
+
+## I have questions.
+
+Then you should join our community!. We have active Discord and Forums, and the community is generally quite
+helpful.
+
+### Advanced topics
+
+##### HTML sanitization
+
+Obsidian sanitizes html for security reasons. Because it runs locally, scripting vulnerabilities are a more serious
+problem than they would be in a web applications. Accordingly, we are probably a bit more strict than you may be
+used to, and you may run into issues if you try to do things like embedding script tags in a note. However,
+the vast majority of people will never encounter issues with this.
+
+##### Accepted file formats
+
+Obsidian recognizes the following file formats right now
+
+```
+1. Markdown files md ;
+```
+```
+2. Image files png , jpg , jpeg , gif , bmp , svg ;
+```
+```
+3. Audio files mp3 , webm , wav , m4a , ogg , 3gp , flac ;
+```
+```
+4. Video files mp4 , webm , ogv ;
+```
+```
+5. PDF files pdf.
+```
+All these types of files can be [[Embed filesembedded]] in a note.
+
+##### Community plugins
+
+Obsidian allows developers to write community plugins to extend Obsidian’s functionality.
+
+Right now, the plugin API is in alpha status. This means any part of the API could introduce breaking changes in a
+future release.
+
+### For developers
+
+For instructions on creating new plugins, see our sample plugin.
+
+For documentation on the API, check out our plugin API repo.
+
+
+After you created your plugin, you can add it to our community plugin marketplace by creating a pull request in
+our releases repo. Refer to the sample plugin on how to release updates for your plugin.
+
+### For users
+
+##### Safe Mode
+
+By default, Obsidian has Safe Mode turned on to protect you from potential harm. Under Safe Mode, no
+community plugin will run.
+
+Please be aware that community plugins can access files on your computer, connect to the internet, and even
+install additional programs. To read more about plugin security, [[#Plugin securitysee here]].
+
+In order to install community plugins, you need to turn off Safe Mode in Settings - Community plugin - Safe
+Mode.
+
+##### Discover and install community plugins
+
+After disabling Safe Mode, you can find community plugins created by the community in Settings - Community
+plugin - Community plugins - Browse.
+
+On this page, you can browse plugins by popularity, or search for specific plugins. Click on a plugin to see details
+and instruction from the plugin author. In the details page, you can click “Install” to install a plugin.
+
+After installing, you can then find the installed plugins under Settings - Community plugin. They need to be
+enabled in order to take effect. You can also uninstall them there.
+
+### Plugin security
+
+Thanks for trusting Obsidian with your data! It means a lot to us, and we take security very seriously. That
+includes community plugins too.
+
+Due to technical reasons with our platform, we’re unable to restrict plugins to a specific permission or access
+level. Since we offer Obsidian for free, currently we’re unable to manually review each plugin.
+
+The good news is that Obsidian has an amazing and passionate community, so we rely on community trust to
+ensure security of community plugins.
+
+In general, you should be able to trust most of the popular plugins from the community. We require all community
+community plugins to be open sourced on GitHub. If you’re working with sensitive data, we recommend you
+to inspect the plugin code before installing it, so that your security needs are met. You can find a link to the
+plugin repository on the plugin detail page.
+
+If you find any security flaws with community plugins, contact the plugin author by adding an issue on GitHub. If
+you believe the plugin is malicious, contact us to get the plugin investigated and removed.
+
+##### Insider builds
+
+
+Insider builds are experimental versions of Obsidian that are released to Catalyst license owners, on an opt-in
+basis.
+
+Please note that insider builds are less stable than public versions, so if you prefer a smoother version, you don’t
+have to enable it.
+
+### How to enable insider build
+
+If you are a [[Catalyst licenseCatalyst supporter]], you have access to Insider Builds before the general public.
+To a c c e s s t h e s e , g o t o S e t t i n g s =  Ac c o u n t , a n d l o g i n w i t h t h e p a s swo rd yo u u s e d o n t h e O b s i d i a n s i t e. T h e n g o
+to Settings = About, and turn on Insider Builds there.
+
+![[Insider.png]]
+
+### Report issues
+
+If you’re on our Discord server, you can go to the #insider-build channel to report issues. If you’re filing a bug
+report on the forum, be sure to note the version you’re using, so that we can improve it before rolling it out to
+everyone.
+
+##### Drag and Drop
+
+There are many ways to drag and drop things around Obsidian to make the experience smoother
+
+### Drag panes
+
+See [[Working with multiple notes#5 Panes can be rearranged by draggingdragging panes]]
+
+### Drag sources
+
+```
+You can drag a file, or multiple files from the [file explorer].
+```
+```
+You can drag a file from a [search] result.
+```
+```
+You can drag a file from [backlinks] or unlinked references.
+```
+```
+You can drag a file from the [starred notes].
+```
+```
+You can drag a file from a link inside the note, in preview mode.
+```
+### Drop destinations
+
+```
+You can drop a file on a pane header to open the file there. Hold Alt (or Shift on MacOS) to drop
+anywhere on the pane.
+```
+```
+You can drop a file on a folder in the [file explorer] to move the file there.
+```
+```
+You can drop a file into an editor to inser t it as a link. The generated link also follows your preferences,
+such as relative paths, or using markdown links.
+```
+
+```
+You can drop a file on the [starred notes] to star it.
+```
+### Dragging from outside Obsidian
+
+```
+You can drag any HTML content from the browser into Obsidian to automatically conver t them into
+Markdown
+```
+```
+You can drag and drop any files from your native file explorer to have Obsidian impor t (make a copy of)
+those files in your vault’s attachment folder and insert them as internal links. Hold Ctrl to create
+file absolute links to those files instead of importing a copy.
+```
+### Dropping files outside Obsidian
+
+```
+This will create an obsidian URL in the external application for the Obsidian note that you dragged.
+```
+##### Contributing to Obsidian
+
+Thanks for the interest in contributing to Obsidian!
+
+There are three major ways you can contribute
+
+### 1. Financial contribution
+
+##### Commercial license
+
+If you’d like to use Obsidian for work activities, try to let your work get you a [[Commercial licensecommercial
+license]].
+
+##### Add-on services
+
+If you’d like to make a website from your notes, consider getting [Obsidian Publish] if the price works for you.
+
+If you’re interested in an end-to-end encryption syncing solution, we also offer [Obsidian Sync]. In addition to
+end-to-end encryption, Obsidian Sync also comes with version history.
+
+##### Catalyst
+
+If you don’t need any of the above, you can get a [Catalyst license] to support our developer, which also gives
+you access to [Insider builds].
+
+##### Obsidian Unlimited
+
+For those very passionate about the project, there’s also the Obsidian Unlimited option, which lets you pay as
+much as you want to support development and help us stay independent. We recommend going for this option
+after you’ve purchased the VIP tier of [Catalyst license] so that you can enjoy the benefits.
+
+### 2. Extending Obsidian
+
+
+##### CSS themes
+
+If you’re proficient in CSS, another way is to contribute a theme, so that people who don’t know CSS can enjoy
+your work. If you decide to do so, feel free to share it on the #css-themes channel on Discord, or in the Share &
+Showcase category on our forum.
+
+If you’d like to add your theme to the community theme list, let us know! (Or we might reach out to you first!)
+
+##### Plugins
+
+If you’re a JavaScriptTypeScript programmer, you can write [Community plugins] for Obsidian, now that our
+plugin API is in alpha.
+
+### 3. Translation and proofreading
+
+##### Translating the inter face
+
+If you know another language (preferably natively), you can help with translating the Obsidian interface into your
+language. You can do that by submitting a pull request in our translation GitHub repository to get it into the next
+version of the app.
+
+##### Translating the docs
+
+We’re in the middle of reorganizing and stabilizing the documentation you’re reading right now. Once it’s in a
+good shape, you can also help translate it, so that people who don’t know English can also easily learn to use
+Obsidian.
+
+##### Found a typo
+
+If you found a typo or a grammar mistake in these documentation, feel free to submit a pull request in our
+documentation repository.
+
+##### Using obsidian URI
+
+Obsidian supports a custom URI protocol obsidian which can be used to trigger various actions within the
+app. This is commonly used on MacOS and mobile apps for automation and cross-app workflows.
+
+If you have Obsidian installed, this link will open the app on your device Click here
+
+## Installing Obsidian URI
+
+To m a ke s u re yo u r o p e r a t i n g sys t e m re d i re c t obsidian URIs to the Obsidian app, there may be additional
+steps you need to perform.
+
+```
+On Windows, running the app once should be sufficient. This will register for the obsidian custom
+protocol handler in the Windows registry.
+```
+
+```
+On MacOS, running the app once should be sufficient, however, your app must be installer version 0.8.
+or later.
+```
+```
+On Linux, there’s a much more involved process
+```
+```
+First, ensure you create a obsidian.desktop file. See here for details
+```
+```
+Ensure that your desktop file specifies the Exec field as Exec=executable %u. The %u is used
+to pass the obsidian URIs to the app.
+```
+```
+If you’re using the AppImage installer, you may have to unpack it using Obsidian-x.y.z.AppImage
+--appimage-extract. Then make sure the Exec directive points to the unpacked executable.
+```
+## Using Obsidian URIs
+
+Obsidian URIs are typically in this format
+
+```
+obsidianactionparam1=value&param2;=value
+```
+```
+The action is usually the action that you would like to perform.
+```
+### Encoding
+
+==Important==
+
+Ensure that your values are properly URI encoded. For example, forward slash characters  must be encoded
+as %2F and space characters must be encoded as %.
+
+This is especially important because an improperly encoded “reserved” character may break the interpretation of
+the URI. See here for details
+
+### Available actions
+
+##### Action open
+
+Description Opens an Obsidian vault, and possibly open a file within that vault.
+
+Possible parameters
+
+```
+vault can be either the vault name, or the vault ID.
+```
+```
+The vault name is simply the name of the vault folder.
+```
+```
+The vault ID is the random 16-character code assigned to the vault. This ID is unique per folder on
+your computer. Example ef6ca3e3b524d22f. There isn’t an easy way to find this ID yet, one will
+be offered at a later date in the vault switcher. Currently it can be found in
+```
+
+```
+%appdata%obsidianobsidian.json for Windows. For MacOS, replace %appdata% with
+~LibraryApplication Support. For Linux, replace %appdata% with ~.config.
+```
+```
+file can be either a file name, or a path from the vault root to the specified file.
+```
+```
+To re s o l ve t h e t a rg e t f i l e , O b s i d i a n u s e s t h e s a m e l i n k re s o l u t i o n sys t e m a s a re g u l a r
+[[wikilink]] within the vault.
+```
+```
+If the file extension is md , the extension can be omitted.
+```
+```
+path an absolute file system path to a file.
+```
+```
+Using this parameter will override both vault and file.
+```
+```
+This will cause the app to search for the most specific vault which contains the specified file path.
+```
+```
+Then the rest of the path replaces the file parameter.
+```
+Examples
+
+```
+obsidianopenvault=my%20vault
+```
+This opens the vault my vault. If the vault is already open, focus on the window.
+
+```
+obsidianopenvault=ef6ca3e3b524d22f
+```
+This opens the vault identified by the ID ef6ca3e3b524d22f.
+
+```
+obsidianopenvault=my%20vault&file;=my%20note
+```
+This opens the note my note in the vault my vault , assuming my note exists and the file is my note.md.
+
+```
+obsidianopenvault=my%20vault&file;=my%20note.md
+```
+This also opens the note my note in the vault my vault.
+
+```
+obsidianopenvault=my%20vault&file;=path%2Fto%2Fmy%20note
+```
+This opens the note located at pathtomy note in the vault my vault.
+
+```
+obsidianopenpath=%2Fhome%2Fuser%2Fmy%20vault%2Fpath%2Fto%2Fmy%20note
+```
+This will look for any vault that contains the path homeusermy vaultpathtomy note. Then, the rest of
+the path is passed to the file parameter. For example, if a vault exists at homeusermy vault , then this
+would be equivalent to file parameter set to pathtomy note.
+
+```
+obsidianopenpath=D%3A%5CDocuments%5CMy%20vault%5CMy%20note
+```
+This will look for any vault that contains the path DDocumentsMy vaultMy note. Then, the rest of the
+path is passed to the file parameter. For example, if a vault exists at DDocumentsMy vault , then this
+would be equivalent to file parameter set to My note.
+
+
+##### Action search
+
+Description Opens the search pane for a vault, and optionally perform a search query.
+
+Possible parameters
+
+```
+vault can be either the vault name, or the vault ID. Same as action open.
+```
+```
+query (optional) The search query to perform.
+```
+Examples
+
+```
+obsidiansearchvault=my%20vault
+```
+This opens the vault my vault , and opens the search pane.
+
+```
+obsidiansearchvault=my%20vault&query;=MOC
+```
+This opens the vault my vault , opens the search pane, and performs a search for MOC.
+
+##### Action new
+
+Description Creates a new note in the vault, optionally with some content.
+
+Possible parameters
+
+```
+vault can be either the vault name, or the vault ID. Same as action open.
+```
+```
+name the file name to be created. If this is specified, the file location will be chosen based on your
+“Default location for new notes” preferences.
+```
+```
+file a vault absolute path, including the name. Will override name if specified.
+```
+```
+path a globally absolute path. Works similar to the path option in the open action, which will override
+both vault and file.
+```
+```
+content (optional) the contents of the note.
+```
+```
+silent (optional) set this if you don’t want to open the new note.
+```
+Examples
+
+```
+obsidiannewvault=my%20vault&name;=my%20note
+```
+This opens the vault my vault , and creates a new note called my note.
+
+```
+obsidiannewvault=my%20vault&path;=path%2Fto%2Fmy%20note
+```
+This opens the vault my vault , and creates a new note at pathtomy note.
+
+##### Action hook-get-address
+
+
+Description Endpoint for use with Hook. Copies a markdown link of the current focused note to the clipboard, as
+an obsidianopen URL. Use obsidianhook-get-address
+
+Possible parameters
+
+```
+vault (optional) can be either the vault name, or the vault ID. If not provided, the current or last focused
+vault will be used.
+```
+## Shorthand formats
+
+In addition to the formats above, there are two more “shorthand” formats available to open vaults and files
+
+```
+obsidianvaultmy vaultmy note is equivalent to obsidianopen
+vault=my%20vault&file;=my%20note
+```
+```
+obsidianabsolutepathtomy note is equivalent to obsidianopen
+path=%2Fabsolute%2Fpath%2Fto%2Fmy%20note
+```
+##### Deleting files
+
+Obsidian has several options for dealing with deleted files, depending on your needs.
+
+```
+By default, deleted files are sent to your system trash. Here you can use whatever means your system has
+for recovering files you’ve accidentally deleted.
+```
+```
+Deleted files can be sent to a special .trash directory in your Vault. This can be useful if you want the
+ability to recover your Vault files separate from your system trash.
+```
+```
+You can also set obsidian to just delete files without possibility of recover y.
+```
+These options can be found in Settings → Files & Links.
+
+##### Customizing CSS
+
+If you are building or modifying your own css, you can open the developer tools by using Ctrl+Shift+I on
+WindowsLinux or Cmd+Opt+I on macOS to get information on the elements you want to customize.
+
+Changes to themes and snippets will be detected automatically and reapplied. You do not need to restart the
+app.
+
+### New to CSS
+
+If you’re new to CSS, our community has put together a quick guide to get comfortable with CSS
+
+```
+Getting Comfortable with CSS
+```
+Klaas also put together a helpful index of common CSS snippets that you can feel free to mix and match
+
+```
+Obsidian CSS Snippets (on GitHub)
+```
+
+##### YAML front matter
+
+## aliases front matter
+
+YAML, also known as front matter, is designed to be file-level metadata that is readable by humans _and_ Obsidian.
+
+Front matter is a section of plain text attributes that starts at the first line of the file. It is one of the most popular
+ways to add metadata in a Markdown file, and has been popularized by static generators such as Jekyll, Hugo,
+and Gatsby.
+
+A YAML block needs triple dashes at the start and end to be read by Obsidian (and other apps). ==It also needs
+to be placed at the very top of the file.==
+
+For example
+
+```
+key value
+key2 value
+key3 [one, two, three]
+key4
+```
+- four
+- five
+- six
+---
+
+As of 0.12.12, there are four keys natively supported
+
+- tags ([[Working with tagsmore information]])
+- aliases ([[Add aliases to notemore information]])
+- cssclass
+- publish ([[Publish#YAML support for Publishmore information]])
+
+As Obsidian continues to develop, we will gradually make it more accessible by plugin developers, and make it
+more user friendly.
+
+##### How Obsidian stores data
+
+We believe [[Obsidian#How we’re differentyour data is always yours to own and control]]. Your notes are stored
+in markdown, which is an open format based on plain text files, and so should be readable in the future by any
+computer that can deal with text files. You can freely edit notes in other software, even while having them open
+in Obsidian.
+
+### Per vault data
+
+There is, however, some data that is needed by the software that is not stored in markdown. Obsidian creates a
+directory called .obsidian in the root of any vault you create. This contains your configuration, including
+custom hotkeys and which plugins are enabled. Any directory starting with a. is invisible on most systems, so
+you will probably never see it unless you try. If you delete this directory, none of your data will be gone, but you
+
+
+will lose your custom settings. It will be recreated when you open that vault in Obsidian again. If you are using
+git , it’s probably best to ignore the .obsidianworkspace file, because the this file stores your panes
+and opened files, but we haven’t observed any other issues with including it.
+
+### System directory
+
+Obsidian also stores some information in the system directory. This is different per Operating System; on Mac it’s
+UsersyourusernameLibraryApplication Supportobsidian , on Windows %APPDATA%Obsidian ,
+and $XDG_CONFIG_HOMEObsidian or ~.configObsidian on Linux. As a result, we recommend against
+creating a vault in this directory.
+
+Aside from that, though, you can create a Vault anywhere your operating system will allow. Obsidian files sync
+fine with Dropbox, iCloud, OneDrive, git, and every other syncing service we’ve tried thus far.
+
+### Symbolic Links
+
+Starting in v0.11.1, Obsidian will recognize symbolic links and junctions. We do not officially recommend using
+these, but we recognize there are valid use-cases for them. Use them at your own risk.
+
+Beware that there are many pitfalls to using symbolic links, and some of them could have serious consequences
+such as data-loss, file corruption, or could crash Obsidian.
+
+Below are some limitations or issues we are aware of that you may want to keep in mind
+
+```
+Symlink loops are disallowed, to prevent crashing Obsidian due to an infinite loop.
+```
+```
+Symlink targets must be fully disjoint from the vault root or any other symlink targets. Disjoint means one
+folder does not contain another, or vice versa. Obsidian will ignore any symlink to a parent folder of the
+vault, or from one folder in the vault to another folder in the same vault. It is a safeguard to ensure you
+don’t end up with duplicated files in your vault, which could cause links to become ambiguous.
+```
+```
+Symlinks may not play well with Obsidian sync, or any other kind of sync. If the target of a symlink is itself
+a directory that’s synced by a different Obsidian vault, you could (potentially) end up with sync conflicts or
+data loss. Some sync tools (e.g. git) do not follow symlinks, but rather synchronize the path the symlink
+points to, which may produce undesirable results if you share your vault with other people that way.
+```
+```
+Obsidian’s file manager cannot move files across device boundaries, so if you symlink to a folder on a
+different drive from your vault, you will not be able to drag files between that folder and other folders using
+Obsidian’s file explorer. (You’ll need to use your OS’s explorer for such moves, and Obsidian will see the
+move as a deletion and the creation of a new file. It will also not update any links that depended on the
+path of that file.)
+```
+```
+File symlinks (as opposed to folder symlinks) may work, but are not officially supported at this time.
+Changes performed outside of Obsidian are not watched for, so if you change the file directly, Obsidian will
+not detect the change, update search indexes, etc.
+```
+```
+Symlinking things under the .obsidian directory in order to share them between vaults has a high
+chance of corrupting your settings, unless you really really know what you’re doing. If you decide to go
+this way, at least have backups.
+```
+
+### Attachments
+
+##### Slides demo
+
+## Obsidian slides demo
+
+To v i e w s l i d e s , yo u ’ l l n e e d t o e n a b l e t h e “ S l i d e s ” p l u g i n.
+
+This can be done through the Settings = Core plugins.
+
+## Obsidian goals
+
+```
+Longevity
+```
+```
+Foster network
+```
+```
+Personalized
+```
+## Longevity
+
+```
+Local files on your hard disk
+```
+```
+Plain text, no proprietary format
+```
+```
+Markdown for maximum portability
+```
+```
+the most popular plain text format that can be edited in other apps
+```
+## Foster knowledge network
+
+```
+[[Internal linkInternal links]]
+```
+```
+Link auto-complete
+```
+```
+See backlinks to and unlinked mentions of current note
+```
+```
+Graph view
+```
+## Personalized
+
+```
+We don’t believe in a single, opinionated solution would work for everyone
+```
+```
+Obsidian is plugin-based
+```
+
+```
+Enable or disable them based on your workflow
+```
+```
+Looking to allow third-party plugins to be developed after v1.0.
+```
+### Concepts
+
+##### Current version
+
+Your cur rent version is your Obsidian version. This is the version number that you’ll see in the [Title bar] and the
+[Vault switcher].
+
+You can have most of the new features and bug fixes by having an up-to-update cur rent version. However, for
+some low-level updates, you might need to bring the [Installer version] up to date.
+
+##### Interface language
+
+The interface of Obsidian has been translated to various languages by [[Credits#Translatorsour amazing
+volunteer translators]]. You can change the interface language either in Settings → About or in the [Vault
+switcher].
+
+Don’t see your language in the list or seeing untranslated bits Consider [[Contributing to Obsidian#Translating
+the docshelp us translate Obsidian into your language]].
+
+##### Installer version
+
+If you look closely in Settings - About, you can find your current version and your installer version.
+
+Installer version will not increase when you [[Update Obsidianauto-update]], unlike the [Current version]. Your
+installer version will only increase when you install Obsidian with a new installer.
+
+To g r a b t h e l a t e s t i n s t a l l e r, p l e a s e g o t o o u r [official website].
+
+Most features can be delivered by auto-updating, but to update the engine for certain new features Obsidian, we
+encourage you to grab the latest installer from our official website from time to time, when your current version
+is above the installer version by a lot, for example when your current version is 0.10.8 while installer version is
+0.8.3.
+
+### Customization
+
+##### Custom hotkeys
+
+Most hotkeys are customizable in Obsidian.
+
+We only defined default hotkeys for the most commonly used commands, but if you frequently use a command,
+it would save you lots of time if you add a hotkey for it.
+
+For a list of default hotkeys, [[Use hotkeyssee here]].
+
+### Viewing hotkeys
+
+
+The fastest way to see the hotkey set for a command is to find the command in [Command palette]. If there’s a
+hotkey listed for that command, it’s set.
+
+### Setting hotkeys
+
+To a d d a h o t ke y, re m ove a h o t ke y, o r re s t o re h o t ke ys t o d e fa u l t , g o t o S e t t i n g s =  H o t ke ys. N o t e t h a t yo u c a n
+also filter the list, as the list of commands is quite long.
+
+##### Appearance
+
+### Base theme
+
+Obsidian comes with two base themes, light and dark. This option sets the default color scheme your theme will
+use to either display its light or dark mode version.
+
+### Custom theme
+
+There are lots of community themes contributed by our amazing community that you can easily choose from.
+
+You can easily tweak it by adding [[Add custom styles#Use Themes and or CSS snippetsCSS snippets]].
+
+### Translucency
+
+You can make the window translucent by enabling this option in the settings appearance tab. Cur rently this
+option is only available for Windows and macOS.
+
+There is a known issue under Windows where dragging the window is extremely slow when translucency is
+enabled. This is due to a Windows bug. A Github issue tracking the status of a fix can be found here
+httpsgithub.comriverarsample-win32-acrylicblurissues
+
+### How to
+
+##### Working with backlinks
+
+Backlinks are one of the most powerful features of Obsidian. As a result, they can sometimes be a bit confusing,
+so here’s some things that might help.
+
+The Backlinks panel has two sections, Linked mentions and Unlinked mentions.
+
+![[Backlinks.png]]
+
+As you can see, from this document, there is currently one entry in each section. Under Linked mentions you can
+see that I made a link to this document in the [Linked pane] note. But, you can also see under Unlinked mentions
+that I wrote the name of this note but did not make it a link.
+
+This can be a very powerful way of seeing connections between your notes that you did not know you were
+making when you wrote them. If, for example, you have a note named for a concept that comes up often in your
+field, you will be able to see easily when it is mentioned in other notes, and thus understand relationships
+
+
+between ideas you might not have otherwise.
+
+If a reference appears in the Unlinked mentions, and you want to link it, hovering over the text will bring up a Link
+button. Clicking this will automatically surround the highlighted text in the referenced note with brackets, making
+it into an explicit link.
+
+You can also create a separate, dedicated backlinks pane for a note under the More Options menu. This will be a
+[Linked pane] connected to the note, and can be moved around anywhere, as described in [Pane layout]. There’s
+also an option to do this in the [Command palette].
+
+##### Add aliases to note
+
+## aliases alias, aliases
+
+Sometimes, you might want to refer to the same file with multiple names in different contexts. These alternative
+names are what we call “aliases”.
+
+For example, you might want to refer to your partner by their full name, first name, or a nickname. Or you might
+want to refer to “artificial intelligence” by its abbreviation “AI”. If you know multiple languages, you may want to
+refer to the same concept with their name in the same language that the rest of the note is written in.
+
+### Set aliases
+
+Starting in 0.9.16, you’re able to specify the “aliases” property in a note’s [YAML front matter] like so
+
+```
+aliases [AI, Artificial Intelligence]
+---
+```
+Please note that this section must be placed at the very top of a note to take effect.
+
+In the future, we’ll consider more user-friendly ways to manage aliases than manually writing them in front
+matter.
+
+### Link with aliases
+
+Once you’ve set aliases for a file, you can write [[alias]] to link to the original page. A redirect icon will show
+up in the auto-complete list like so
+
+![[Insert alises.png]]
+
+An internal link with display text will get inserted like so [[Add aliases to notealias]].
+
+Note the link to alias is NOT inserted as [[alias]] for interoperability, so that other software can recognize it
+as well.
+
+### Find unlinked mentions
+
+
+After you’ve set aliases for a note, you can find unlinked mentions by both its name and its aliases.
+
+For example, after setting “AI” as an alias for “Artificial intelligence”, you’ll see mentions of “AI” in other files in
+the [Backlinks] section.
+
+If you decide to link this mention, a link with display text set to the alias will be created for you. Following the
+example above, AI will become [[Artificial intelligenceAI]] once you click on the “Link” button.
+
+##### Change settings
+
+The settings can be found by clicking the gear in the bottom left corner, or by hitting CtrlCmd-,. Most of
+them are fairly self-explanatory, but here are some notes that might be helpful.
+
+```
+Most of the settings are toggle switches. If there are more details to a setting, it may have a gear next to
+the switch for additional settings. For example, the gear next to Spell Check reveals the custom dictionary,
+so you can remove words you may have accidentally added.
+```
+```
+Enabling plugins will cause their settings to appear in the list of tabs. For example, if you have the Daily
+Note plugin enabled, a setting tab will appear that allows you to further configure it.
+```
+##### Working with multiple cursors
+
+If you hold down Alt ( option on mac) and click, you can create multiple cursors. This can be useful when
+modifying a lot of lines in the same way, for example putting - at the beginning of multiple lines to turn them
+into a list, or appending [[ to a series of links you’ve copied from elsewhere.
+
+To c a n c e l m u l t i p l e c u r s o r s , e i t h e r c l i c k s o m e w h e re i n t h e n o t e ( w i t h o u t a m o d i f i e r ke y ) , o r h i t e s c a p e.
+
+##### Folding
+
+Folding text is an extremely powerful tool for outlining or writing, in order to focus on what you’re working on.
+
+To u s e fo l d i n g , g o t o S e t t i n g s ( t h e g e a r i c o n o n t h e l e f t ) =  E d i t o r a n d t u r n o n Fold indent and Fold
+heading.
+
+Obsidian has the ability to fold both markdown headers and indented lists. Note that at the top of this note there
+is a downward pointing arrow next to the title. If clicked, it will fold the entire note up, and if clicked again, it will
+show the note. This can be applied at multiple levels of markdown, as well as multiple levels of indentation in
+lists.
+
+## By way of example
+
+```
+1. Categories of things
+```
+```
+2. A subcategory
+```
+```
+3. Another subcategory
+```
+```
+i. An example of an item
+```
+
+```
+ii. A different, equally important item.
+```
+##### Use hotkeys
+
+Hotkeys help you get work done faster. If you frequently per
+
+If you have the [Command palette] enabled, You can use CtrlCmd+P to bring it up, which will show you all
+currently available commands and hotkeys.
+
+Most hotkeys can be [[Custom hotkeyscustomized]] for your needs in Settings → Hotkeys.
+
+##### Embed files
+
+### Embed attachments
+
+You can embed attachment files like images or audio in your notes. Use the ![[filename.png]] syntax like
+so
+
+![[Engelbart.jpg]]
+
+![[Excerpt from Mother of All Demos (1968).ogg]]
+
+You can embed a PDF file in your notes with the same syntax. Additionally, you can write ![[My
+File.pdf#page=number]] to open to that specific page of the PDF directly.
+
+### Embed notes
+
+You can embed a note also, with the same syntax
+
+![Accepted file formats]
+
+### iframe
+
+“iframe” is a way to embed a web page in another. It’s useful because Markdown can accept HTML, which is a
+simple language to construct the web pages we see every day.
+
+For example
+
+```
+iframe src=httpswww.youtube.comembedNnTvZWp5Q7oiframe
+```
+Produces
+
+
+#### Making a Minecraft Obsidi...
+
+The basic syntax is
+
+```
+iframe src=INSERT YOUR URL HEREiframe
+```
+Some websites have quirks that don’t allow you to embed them. For example, you can’t embed a YouTube video
+by using its normal URL, but you can use its embed URL which is
+httpswww.youtube.comembedVIDEO_ID.
+
+If you want to embed a website, try searching for “{website} embed iframe”.
+
+For example, you can embed Twitter tweets like so as suggested by search results
+
+```
+iframe
+border=
+frameborder=
+height=
+width=
+src=httpstwitframe.comshowurl=https%3A%2F%2Ftwitter.com%2Fjack%2Fstatus%2F20
+iframe
+```
+### Developer notes
+
+The syntax is inspired by Markdown’s image syntax. We had two observations
+
+```
+1. [Image](link.png) links to the image, but ![Image](link.png) actually displays it.
+```
+###### jack
+
+###### @jack
+
+### just setting up my twttr
+
+###### 9 50 PM · Mar 21, 2006
+
+###### 173.4K Reply Share this Tweet
+
+```
+Read 10.1K replies
+```
+```
+Twitframe
+```
+
+```
+2. The internal link syntax is based on this assumption [[My page]] is a shortcut (or “syntactic sugar” if
+you will) for [My page](My page).
+```
+To c o m b i n e t h e s e t wo t h i n g s , we c a n c o m e u p w i t h a t h i rd p a t t e r n  ![[My page]] should be equivalent to!
+[My page](My page) , which by the image convention, if the title is the same as the link, should display it.
+
+There are other implementations out there, for example Roam Research uses {{embed ((NODE_ID))}}. We
+have also considered using the ((Page name)) syntax too, but we feel like ![[Page name]] is more
+consistent, more familiar, and leaves more room so that the other symbols to have their own meanings.
+
+##### Resize images
+
+You can resize images using the following syntax
+
+For markdown images, use ![AltText100x100](httpsurltoimage.png)
+
+For embeds, use ![[image.png100x100]]
+
+To h ave t h e i m a g e s c a l e a c c o rd i n g t o i t s a s p e c t r a t i o , o m i t t h e h e i g h t ![[image.png100]]
+
+##### Import data
+
+There are a few differences between the way various PKM and note taking systems work that mean moving
+between them can be a little complicated. For the most part, if whatever you’re using can be converted to
+markdown, it will work fairly well within Obsidian. But some things, like tags and links, can be tricky.
+
+On our Forum there is a post collecting methods that other people have developed. Right now, it includes
+
+```
+Import from Notion
+```
+```
+Import from Notion (automated)
+```
+```
+Import from Evernote
+```
+```
+Import from OneNote
+```
+```
+Import from Apple Notes
+```
+```
+Import from Bear
+```
+```
+Import from Zkn
+```
+```
+Import from TiddlyWiki 5
+```
+But if you don’t see your system on this list, check out the forum post, someone may have solved your issue
+since this document was written.
+
+Also of note, the makers of nvUltra, another markdown-based note-taking program, have a list on their website
+of ways to export to nvUltra. In a lot of cases, these will be the same, or at least a helpful place to start.
+
+## Built-in tools
+
+
+### From Roam Research
+
+If you have data in Roam, it’s easy to export and play around with it in Obsidian.
+
+```
+1. Choose “Export all” in the menu
+```
+```
+![[Pasted image.png]]
+```
+```
+1. Click the blue “Export all” button
+```
+```
+![[Pasted image 1.png]]
+```
+```
+1. Unzip the “Roam-Export-xxxxxxxxxxxxx.zip” into a folder.
+```
+```
+2. Click on the vault icon (the tooltip should say “Open another vault”) on the bottom left corner in the
+app, and select “Open folder as vault”.
+```
+```
+Pick the folder you just unzipped to.
+```
+```
+1. Use our [markdown format converter] to convert Roam Research’s Markdown format into Obsidian’s
+format.
+```
+```
+It can be used turn #tag into Obsidian [[links]].
+```
+```
+It can also convert ^^highlight^^ into ==highlight==.
+```
+### From Bear
+
+If you’re importing from Bear, the [Markdown format converter] plugin has an option to convert
+highlight to ==highlight==.
+
+### Using Zettelkasten
+
+If you’ve been using the Zettelkasten method to structure your notes, here’s something you might want to know
+
+Links in Obsidian require a full match to the note name. This means that [[202001010000]] will not properly
+link to [[202001010000 My Note]].
+
+In order to fix that, you can use our [markdown format converter] to convert your Zettelkasten links into either
+[[202001010000 My Note]] or [[202001010000 My NoteMy Note]].
+
+You might also be interested in the [Zettelkasten prefixer] plugin.
+
+##### Preview and edit modes
+
+In obsidian, a document can be viewed in either edit mode or preview mode. In edit mode, you will see basic
+markdown rendering, but certain things, like code syntax highlighting and embedded files, will only show up in
+preview mode. Most notably, any images you embed will only be visible in preview mode.
+
+
+To t o g g l e b e t we e n p re v i e w a n d e d i t m o d e , c l i c k t h e p re v i e w b u t t o n i n t h e t i t l e b a r. I n e d i t m o d e , i t w i l l a p p e a r a s
+a page; in preview mode, a pencil. If you CmdCtrl - click, the preview will be opened in a [Linked pane]. You
+can also toggle Preview Mode by hitting CmdCtrl-E , but this hotkey can, of course, be changed.
+
+If you want to default to opening in preview rather than edit mode, a toggle for that can be found in the
+[Command palette]. You can also set a [[Use hotkeysKeyboard Shortcut]] for toggling between default states.
+
+##### Working with tags
+
+Ta g s a r e a ve r y u s e f u l w ay o f g r o u p i n g m u l t i p l e n o t e s s o t h e y a r e e a s y t o f i n d. A t a g i s e s s e n t i a l l y a c l i c k a b l e
+search through your entire Vault for a term. For example, clicking on #tags will bring up a search with all notes
+that contain that tag. Most people use them for broad categories of things, like a class you might be taking notes
+in or a type of idea. Some Zettelkasten practitioners like to use them as “entry points” for thinking about
+connected ideas. But ultimately, they are flexible enough that you can use them in any way you would like.
+
+### Ta g p a n e
+
+If you have the [Ta g p a n e] plugin enabled, you will see a list of all tags that are used across all of your notes,
+sorted by frequency. Clicking on any of those will activate that search.
+
+This will allow you to search exact matches of a tag. For example, when clicking , as per usual, but if you want to
+find all instances of maintag with all subtags, you can still use the [Search] to look for #maintag. This is
+useful in cases where you have subcategories of things but you also want to be able to easily find all instances of
+the higher category.
+
+### Allowed characters
+
+Spaces are not allowed in tags. So, if you want to have multiple words in a tag, you can use these formats
+
+```
+CamelCase #TwoWords
+```
+```
+Underscore #two_words
+```
+```
+Dash #two-words
+```
+The only symbols allowed are
+
+```
+1. _ (underscore) and - (dash) to separate words;
+```
+```
+2.  (forward slash) for [[Tag pane#Nested tagsnested tags]].
+```
+Numbers are allowed in the tag, ==as long as the tag is not purely numeric==. For example, #1984 does not form
+a valid tag, but #y1984 is valid.
+
+##### Working with multiple vaults
+
+Each collection of notes in Obsidian is known as a Vault. A Vault consists of a folder, and any sub-folders within
+it. Right now, you’re looking at the Obsidian Help Vault, which is just a folder of files included with Obsidian.
+
+
+You can open another Vault anywhere on your computer, and it will retain its own individual [[Core
+pluginsPlugins]] and [[Add custom stylescustom styling]]. This is useful, for example, if you have one Vault
+where you keep notes but a different one in which you do long-form writing.
+
+A new or existing Vault can be opened from the button just above the Settings gear.
+
+![[Vault picker.png]]
+
+You have the option to either open an existing folder of markdown files, create a new vault (which essentially just
+creates a new folder that you will put markdown files into), or opening a special vault containing these help files.
+The Help Vault is stored in a special Obsidian directory (see [How Obsidian stores data]), but aside from that, it’s
+a directory of files just like any other.
+
+[[Internal linkInternal Links]] are not shared across Vaults. If you have one Vault inside another Vault, this can get
+confusing, so we recommend not doing that.
+
+Always remember, a Vault is just a collection of markdown files. You can use whatever file management
+techniques you would normally to move them around on your file system, and Obsidian will automatically refresh
+to keep up.
+
+### Transfer settings between vaults
+
+All settings, themes, and plugins are stored in the .obsidian folder under your vault. If you copy this folder
+from one vault to another, all the settings will be transferred as well. You may need to restart Obsidian for all of
+the settings to take effect.
+
+This folder is hidden in some operating systems. Notably, you can use Cmd-Shift-Period to show hidden files
+on macOS in order to reveal the .obsidian folder.
+
+##### Link to blocks
+
+In Obsidian 0.9.5 or higher, in addition to [[Internal link#Link to headingslinking to headings]], you can also link
+to blocks.
+
+### What is a block
+
+A “block” can be a paragraph, a blockquote, a list item, etc. In general, anything that has empty lines before and
+after is a block. ^dcf64c
+
+### Link to blocks
+
+To l i n k t o a b l o c k i n a s p e c i f i c f i l e , f i r s t t y p e [[filename to bring up a list of matched files. After selecting a
+file, type ^ and continue typing to search for blocks to link to.
+
+Once you hit enter, a link to that block will be generated for you, in the format similar to
+[[filename#^dcf64c]] , where dcf64c is the block ID that was just generated for you.
+
+If you’re not sure which file the block is in, another method is to type [[^^ and search for blocks in all files.
+This will search through all the blocks in your vault, so expect a bit of delay if your vault is large.
+
+
+For example, [[#^dcf64c]] is a link to a block above.
+
+### Embed or transclude blocks
+
+Similar to [[Embed filesfiles embeds]], you can simply use! in front of a block link to embed it.
+
+Here’s an example
+
+![[#^dcf64c]]
+
+### Manual block IDs
+
+If you want human readable block IDs, you can manually put ^your-id after a block. Make sure there’s at least
+one space if you’re putting the ID at end of a line.
+
+To re fe r t o c o m p l ex b l o c ks l i ke t a b l e s , p u t t h e b l o c k I D o n i t s ow n a f t e r t h e b l o c k , a n d m a ke s u re t h e re i s a n
+empty line both before and after the block ID.
+
+After you add the block ID manually, when you refer to that block, your-id will be used instead of a randomly
+generated block ID.
+
+Note that only letters, numbers, and dashes are allowed in manual block IDs.
+
+### Interoperability
+
+Please be aware that block reference is not part of standard Markdown, but rather Obsidian’s specific flavor of
+Markdown. That means these links will not work outside of Obsidian.
+
+You can still find referenced block by searching for the block ID, although that ’s a rather manual process. The
+connection is not lost as long as you have software that can search in a folder.
+
+##### Capture information
+
+### Copy and paste
+
+When you see something useful online, you can simply select the text, copy, and paste in Obsidian. Obsidian will
+try to convert it into proper Markdown so that it fits right in.
+
+If you only wish to copy the text without the formatting, please use Ctrl-Shift-V on Windows and Linux and
+Cmd-Shift-V on macOS to do so.
+
+### Use a clipper extension
+
+Because Obsidian accepts any Markdown file, you can clip entire web pages by clipping to Markdown files and
+downloading them into your vault.
+
+death_au’s “MarkDownload” browser extension works well for this purpose. You can get it for
+
+```
+Google Chrome
+```
+
+```
+Firefox
+```
+```
+Microsoft Edge
+```
+##### Manage attachments
+
+## Add an attachment
+
+There are several ways to include attachments in your notes
+
+```
+1. Copy and paste;
+```
+```
+2. Drag and drop;
+```
+```
+3. Download or copy file to vault folder.
+```
+After being added, these attachment files are just normal files and can still be accessed through your file system.
+
+Please note that only [Accepted file formats] are handled.
+
+### Copy and paste
+
+Pasting a local file from your system explorer or your clipboard will put the file into your vault.
+
+This is very handy when combined with screenshot tools.
+
+### Drag and drop
+
+If you drag and drop a file from your file explorer, it will be copied to your vault as well.
+
+### Download or copy to vault folder
+
+This can work well when paired with [[Capture information#Use a clipper extensionclipper extensions]].
+
+You can also download images from your browser into your vault folder direc tly for later reference.
+
+## Change default attachment location
+
+By default, new attachments will be dropped in the root of your vault. You can fine tune this setting in Settings
+= Files & Links = “Default location for new attachments”.
+
+### Choose a folder
+
+You can choose a fixed folder to always place your attachments in. To do this, choose “In the folder specified
+below”, and choose a folder in your vault in the new field that appears.
+
+Alternatively, you can right click on a folder in [File explorer] and choose “Set as attachment folder”.
+
+
+### Same folder as current file
+
+Sometimes, you may want the attachment files to always be in the same folder as the note you’re working on. In
+this case, choose “Same folder as current file”.
+
+### Under the current folder
+
+You can also choose to save attachments to a folder under neath the folder that the cur rent file is in.
+
+To d o t h i s , c h o o s e t h e “ S u b fo l d e r u n d e r c u r re n t fo l d e r ” o p t i o n , a n d w r i t e t h e n a m e o f t h e s u b fo l d e r i n t h e f i e l d
+that appears. For example, if you write assets , and your note is in VAULTfolderpath , the attachments
+will be added to VAULTfolderpathassets when you’re working on this note.
+
+You don’t need to create the subfolder beforehand; if it doesn’t exist, Obsidian will create it for you.
+
+##### Add custom styles
+
+When you want to add custom styles to your vault, there are two main ways to do this
+
+## Va u l t s t y l e s
+
+### Themes
+
+Themes allow you to toggle the appearance of your vault with a dropdown menu once they have been added to
+your vault’s theme directory.
+
+This configuration can be found in Settings = Appearance = Themes section of your vault settings.
+
+### Create a custom theme
+
+If you are creating your own theme, you can do this by
+
+```
+1. Creating your custom theme CSS file in the themes directory
+YOUR_VAULT.obsidianthemesYOUR_CUSTOM_THEME.css
+```
+```
+2. Enabling it in the theme dropdown under Settings = Appearance = Themes
+```
+For more information on how to customize styles of the graph, you can find more information in [Graph view].
+
+### Use Themes andor CSS snippets
+
+You can find this configuration in Settings = Appearance. You can choose a community theme or set the
+theme you developed yourself. If you set a community theme, it will be automatically placed in the correct folder.
+If you develop your own theme, you have to put it in the shown folder location yourself.
+
+CSS snippets are supposed to be small pieces of CSS for small changes you want to makethings you want to
+add. These snippets have to be placed in the shown directory.
+
+
+You can go to the respec tive direc tories by clicking on the folder buttons. If the folder isn’t created yet, it will be.
+In case your snippets or theme don’t show up after you’ve put them there, you can click the button next to the
+folder icon to refresh the list.
+
+## Obsidian Publish styles
+
+At this time, [Obsidian Publish] is unable to automatically detect the vault’s configured [[Add custom
+styles#Themestheme]] and publish the respective styles.
+
+A workaround for this limitation is to
+
+```
+1. Go into YOUR_VAULT.obsidianthemesCURRENT_THEME_FOLDER ;
+```
+```
+2. Copy the primary CSS file CURRENT_THEME.css in the folder;
+```
+```
+3. Paste it in the root directory of your vault ( YOUR_VAULT );
+```
+```
+4. Rename the CSS file as publish.css ;
+```
+```
+5. In the publish plugin, upload the publish.css file;
+```
+```
+6. If your CSS doesn’t take effect in a few minutes, try refreshing the browser cache as the stale CSS might
+have been cached.
+```
+##### Basic note taking
+
+If you’ve just opened Obsidian, you’ll see two documents here. The one in the left pane is a text file, which you
+can edit using Markdown syntax. The one in the right pane is a _Preview_ of the same text file if you were to export
+it as HTML, or as a PDF document. Note that some things look different in Preview, and, most obviously, links are
+not in brackets. To follow a link, click on it in the Preview pane. You can follow links in the Editor pane as well, by
+holding down CtrlCmd and clicking on the link. If you want to go back to the page you were on before, use the
+shortcut CtrlCmd-alt-LeftArrow
+
+Alternatively, the notes that link to the one you’re currently on will be shown in the Backlinks Panel on the right
+(find more about Backlinks [[Backlinkshere.]])
+
+If you get lost at any time, or just want to explore what else Obsidian can do, CtrlCmd-P brings up the
+Command Palette. You can type commands there, like “Navigate back”, and you’ll see options filter to a short list,
+along with hotkey shortcuts if they have them.
+
+At base, Obsidian is a tool for working with a bunch of markdown files that are stored on your computer. If you’re
+not familiar with markdown, it’s just plain text with some formatting that makes it powerful (for more on that, see
+[[Format your notesMarkdown]]). As a result, if you want to use obsidian for keeping regular notes on just about
+anything, it will work great.
+
+Let’s say you want to write a note about your favorite band. Just type the name of the note surrounded by two
+square brackets, like [[My Favorite Band]]
+
+Try it here (make sure you’re typing in the Editor pane)
+
+
+You’ll notice that the text and the brackets tur n blue. That means it ’s a link now. Click on that link in the Preview
+(or Cmd-click in the Editor), and you’ll see a blank note. Write whatever you want there, and when you’re
+done, come back here with Cmd-alt-left , or by clicking the name of this note ([Basic note taking]) in the
+Backlinks to the right. To learn more about navigating links, see [Internal link].
+
+Notice that your new note showed up automatically in the File Explorer to the left. Obsidian automatically creates
+files when you click a link to a file that does not exist. This means you can [[write naturally]] about
+[[whatever comes to mind]] and then go back and create the new notes at your leisure. This makes
+Obsidian a fantastic tool for thinking freely in notes without having to worry about where to file them. And if you
+decide that a title is not what you actually meant, you can change the file name at the top of this window, and
+Obsidian will automatically update all links to it.
+
+From there, you can make any kind of structure you want. Many people will want to make a Table of
+Contents note for listing major groups of notes. You can also use #tags to create categories (if you click that it
+will show you every note that contains #tags ). Really, the structure you build should be whatever works for you.
+We suggest you just start with what feels natural. Obsidian is flexible enough that it should be relatively simple to
+rearrange things later.
+
+Be aware! The note you just created is in these Help documents, which will be overwritten on new releases. ==If
+you created anything you care to keep, it should be put into a different vault==. For details on how to do that, see
+[Working with multiple vaults].
+
+If you want an example of a more advanced technique, you might look into the sample workflows on our forum.
+
+##### Update Obsidian
+
+### How auto-update works
+
+Obsidian checks for update every 12 hours. Once an update is available, restarting the app will automatically
+bring you to the latest version.
+
+You can check your cur rent version, check for updates in Settings = About. You can also tur n off “automatic
+updates” there.
+
+### Insider build
+
+If you’re looking to update to the latest insider build, please refer to [[Insider builds#How to enable insider
+buildthis guide]] on how to turn it on.
+
+### Current version vs installed version
+
+If you look closely in Settings = About, you can find your current version and your installer version.
+
+Your cur rent version is your Obsidian version. This is the version of the app on top of the engine (which is
+Electron). It will increase when you auto-update, but your installer version will not. Your installer version will only
+increase when you install Obsidian with a new installer.
+
+
+Most features can be delivered by auto-updating, but to update the engine for certain new features Obsidian, we
+encourage you to grab the latest installer from our official website from time to time, when your current version
+is above the installer version by a lot, for example when your current version is 0.10.8 while installer version is
+0.8.3.
+
+##### Format your notes
+
+Obsidian is a Markdown-based note-taking and knowledge base app.
+
+We currently support the formats below
+
+### Internal linking
+
+```
+Link to a page [[Internal link]].
+```
+Link to a page [Internal link].
+
+### Embeds
+
+Embed another file (read more about [Embed files]). Here’s an embedded section
+
+```
+![[Obsidian#What is Obsidian]]
+```
+![[Obsidian#What is Obsidian]]
+
+### Headers
+
+```
+# This is a heading 1
+## This is a heading 2
+### This is a heading 3
+#### This is a heading 4
+##### This is a heading 5
+###### This is a heading 6
+```
+
+# This is a heading 1
+
+## This is a heading 2
+
+## This is a heading 3
+
+##### This is a heading 4
+
+This is a heading 5
+
+This is a heading 6
+
+## Emphasis
+
+```
+This text will be italic
+_This will also be italic_
+```
+_This text will be italic
+This will also be italic_
+
+```
+This text will be bold
+__This will also be bold__
+```
+This text will be bold
+This will also be bold
+
+```
+_You can combine them_
+```
+_You can combine them_
+
+## Lists
+
+- Item 1
+- Item 2
+- Item 2a
+- Item 2b
+1. Item 1
+1. Item 2
+1. Item 3
+1. Item 3a
+1. Item 3b
+
+
+```
+Item 1
+```
+```
+Item 2
+```
+```
+Item 2a
+```
+```
+Item 2b
+```
+```
+Item 1
+```
+```
+Item 2
+```
+```
+Item 3
+```
+```
+Item 3a
+```
+```
+Item 3b
+```
+### Images
+
+```
+![Engelbart](httpshistory-computer.comModernComputerBasisimagesEngelbart.jpg)
+```
+```
+Engelbart
+```
+##### Resizing images
+
+Example of this above image resized to 100 pixels wide
+
+```
+![Engelbart100](httpshistory-computer.comModernComputerBasisimagesEngelbart.jpg)
+```
+
+```
+Engelbart100
+```
+### Links
+
+##### External links
+
+Markdown style links can be used to refer to either external objects, such as web pages, or an internal page or
+image.
+
+```
+httpobsidian.md - automatic!
+[Obsidian](httpobsidian.md)
+```
+[httpobsidian.md](httpobsidian.md) - automatic!
+Obsidian
+
+##### Obsidian URI links
+
+[[Using obsidian URIObsidian URI]] links can be used to open notes in Obsidian either from another Obsidian
+vault or another program.
+
+For example, you can link to a file in a vault like so (please note the [[Using obsidian URI#Encodingrequired
+encoding]])
+
+```
+[Link to note](obsidianopenpath=D%2Fpath%2Fto%2Ffile.md)
+```
+Link to note
+
+You can link to a note by its vault name and file name instead of path as well
+
+```
+[Link to note](obsidianopenvault=MainVault&file;=MyNote.md)
+```
+
+Link to note
+
+##### Escaping
+
+If there are spaces in the url, they can be escaped by either using %20 as a space, such as
+
+```
+[Export options](Pasted%20image)
+```
+Export options
+
+Or you can enclose the target in  , such as
+
+```
+[Slides Demo](Slides Demo)
+```
+Slides Demo()
+
+### Blockquotes
+
+```
+Human beings face ever more complex and urgent problems, and their effectiveness in dealing with these
+problems is a matter that is critical to the stability and continued progress of society.
+```
+- Doug Engelbart, 1961
+
+### Inline code
+
+```
+Text inside `backticks` on a line will be formatted like code.
+```
+Tex t i n s i d e backticks on a line will be formatted like code.
+
+### Code blocks
+
+Syntax highlight is supported with the language specified after the first set of backticks. We use prismjs for
+syntax highlighting, a list of supported languages can be found at their site
+
+```
+js
+function fancyAlert(arg) {
+if(arg) {
+$.facebox({div'#foo'})
+}
+}
+```
+```
+ Human beings face ever more complex and urgent problems, and their effectiveness in dealing with these problems is a matter that is critical to the stability and continued progress of society.
+- Doug Engelbart, 1961
+```
+
+```
+function fancyAlert(arg) {
+if(arg) {
+$.facebox({div'#foo'})
+}
+}
+```
+```
+Text indented with a tab is formatted like this, and will also look like a code block in preview.
+```
+### Ta s k l i s t
+
+- [x] #tags, [links](), formatting supported
+- [x] list syntax required (any unordered or ordered list supported)
+- [x] this is a complete item
+- [] this is also a complete item (works with every character)
+- [ ] this is an incomplete item
+- [ ] tasks can be clicked in Preview to be checked off
+
+```
+[x] #tags, links, formatting supported
+[x] list syntax required (any unordered or ordered list supported)
+[x] this is a complete item
+[] this is also a complete item (works with every character)
+[ ] this is an incomplete item
+[ ] tasks can be clicked in Preview to be checked off
+```
+### Ta b l e s
+
+You can create tables by assembling a list of words and dividing them with hyphens - (for the first row), and
+then separating each column with a pipe  
+
+```
+First Header  Second Header
+------------  ------------
+Content from cell 1  Content from cell 2
+Content in the first column  Content in the second column
+```
+```
+First Header Second Header
+```
+```
+Content from cell 1 Content from cell 2
+```
+```
+Content in the first column Content in the second column
+```
+```
+Text indented with a tab is formatted like this, and will also look like a code block in preview.
+```
+```
+Tables can be justified with a colon  Another example with a long title
+-----------------------------
+because of the ``  these will be justified
+```
+
+_Ta b l e s c a n b e j u s t i f i e d w i t h a c o l o n  A n o t h e r ex a m p l e w i t h a l o n g t i t l e_
+⸻⸺-⸻—-
+because of the   these will be justified
+
+If you put links in tables, they will work, but if you use Piped Links, the pipe must be escaped with a  to
+prevent it being read as a table element.
+
+```
+First Header  Second Header
+------------  ------------
+[[Format your notesFormatting]]  [[Keyboard shortcutshotkeys]]
+```
+```
+First Header Second Header
+```
+```
+[[Format your notesFormatting]] [[Use hotkeyshotkeys]]
+```
+### Strikethrough
+
+```
+Any word wrapped with two tildes (like ~~this~~) will appear crossed out.
+```
+Any word wrapped with two tildes (like ~~this~~) will appear crossed out.
+
+### Highlighting
+
+```
+Use two equal signs to ==highlight text==.
+```
+Use two equal signs to ==highlight text==.
+
+### Footnotes
+
+```
+Here's a simple footnote,[^1] and here's a longer one.[^bignote]
+[^1] meaningful!
+[^bignote] Here's one with multiple paragraphs and code.
+Indent paragraphs to include them in the footnote.
+`{ my code }`
+Add as many paragraphs as you like.
+```
+Here’s a simple footnote, and here’s a longer one.
+
+```
+If you put links in tables, they will work, but if you use Piped Links, the pipe must be escaped with a `` to prevent it being read as a table element.
+```
+```
+[1] [2]
+```
+
+### Math
+
+```
+$$begin{vmatrix}a & b
+c & d
+end{vmatrix}=ad-bc$$
+```
+[begin{vmatrix}a & b c & d end{vmatrix}=ad-bc]
+
+You can also do inline math like (e^{2ipi} = 1).
+
+Obsidian uses Mathjax. You can check which packages are supported in Mathjax here.
+
+### Comments
+
+Use %% to enclose comments, which will be parsed as Markdown, but will not show up in the preview.
+
+```
+Here is some inline comments %%You can't see this text%% (Can't see it)
+Here is a block comment
+%%
+It can span
+multiple lines
+%%
+```
+Here is some inline comments %%You can’t see this text%% (can’t see it in preview)
+
+Here is a block comment (can’t see it in preview either)
+%%
+It can span
+multiple lines
+%%
+
+### Diagram
+
+Obsidian uses Mermaid to render diagrams and charts. Mermaid also provides a helpful live editor.
+
+```
+mermaid
+sequenceDiagram
+Alice-+John Hello John, how are you
+Alice-+John John, can you hear me
+John---Alice Hi Alice, I can hear you!
+John---Alice I feel great!
+```
+```
+sequenceDiagram
+Alice-+John Hello John, how are you
+Alice-+John John, can you hear me
+John---Alice Hi Alice, I can hear you!
+John---Alice I feel great!
+```
+
+Obsidian supports linking to notes in Mermaid
+
+```
+```mermaid
+graph TD
+```
+```
+Biology – Chemistry
+```
+```
+class Biology,Chemistry internal-link;
+```
+```
+An easier way to do it is the following ^376b9d
+
+```
+```mermaid
+graph TD
+```
+```
+A[Biology]
+B[Chemistry]
+```
+```
+A – B
+```
+```
+class A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z internal-link;
+```
+```
+This way, all the note names (at least until Z[note name] ) are all automatically assigned the class internal-
+link when you use this snippet.
+
+If you use special characters in your note names, you need to put the note name in double quotes.
+⨳ special character
+It looks like this if you follow the [[Format your notes#^376b9dsecond option]]
+
+A[⨳ special character]
+
+## Developer notes
+
+
+We strive for maximum capability without breaking any existing formats, therefore we use a slightly unorthodox
+combination of flavors of markdown. It is broadly CommonMark, with the addition of some functionality from
+GitHub Flavored Markdown (GFM), some latex support, and our chosen embed syntax, which you can read more
+about at [Accepted file formats].
+
+##### Internal link
+
+Internal links are the backbone of your knowledge network.
+
+### Link to files
+
+To c re a t e a n i n t e r n a l l i n k , s i m p l y t y p e [[. This will prompt you with the list of notes you can link to. Use Up
+arrow and Down arrow to navigate the suggestion list and Enter to select the current highlighted link.
+
+### Link to headings
+
+You can also link to specific headers in files. Star t typing a link like you would nor mally. When the note you want
+is highlighted, press # instead of Enter and you’ll see a list of headings in that file. Continue typing or
+navigate with arrow keys as before, press # again at each subheading you want to add, and Enter to
+complete the link.
+
+To m a ke t h e l i n k d i s p l ay d i f fe re n t t ex t t h a n i t s re a l n o t e n a m e i n P re v i e w, u s e t h e ve r t i c a l p i p e ( Shift+ ) For
+example [[Internal linkCustom Link Name in Preview!]] This can be combined with linking to headers, as in
+[[Folding#By way of exampleExample of Folding]].
+
+### Following Links
+
+```
+To fo l l ow a l i n k i n t h e P re v i e w p a n e , s i m p l y c l i c k o n t h e l i n k.
+```
+```
+To fo l l ow a l i n k i n a n e w p a n e l f ro m P re v i e w, c l i c k w h i l e p re s s i n g CtrlCmd ’’
+```
+```
+To fo l l ow a l i n k i n t h e E d i t o r p a n e , c l i c k t h e l i n k w h i l e p re s s i n g CtrlCmd.
+```
+```
+To fo l l ow a l i n k i n a n e w p a n e l f ro m t h e E d i t o r, c l i c k t h e l i n k w h i l e p re s s i n g CtrlCmd-Shift ’’
+```
+```
+To s e e a p re v i e w o f t h e l i n ke d c o n t e n t w i t h o u t l e av i n g t h e c u r re n t n o t e , e n a b l e t h e [page preview] plugin
+and a popup window will be displayed.
+```
+##### Working with multiple notes
+
+You can edit and view multiple files in Obsidian.
+
+To e f fe c t i ve l y u s e s p l i t v i e w, yo u o n l y n e e d t o k n ow a fe w t h i n g s 
+
+1. ==Use CtrlCmd key== when you want to open things in a new pane.
+
+By default, when you click something, it will open in the active pane. The active pane is marked with highlighted
+bar under the title, and its title is more visible than the inactive panes.
+
+
+To o p e n f i l e s i n n e w p a n e s , h o l d d ow n CtrlCmd while you click in Preview mode ( Shift + CtrlCmd in Edit
+mode). This applies to a number of places, including [file explorer], [backlinks] (both links and unlinked
+mentions), [search] results, and [graph view]. It also applies to buttons; instead of previewing in the current
+pane, you can Cmd+click the preview button to preview in a new pane. When using the Quick Switcher,
+holding down CmdCtrl when hitting Enter will open in a new pane.
+
+2. You can also create new panes by ==splitting==.
+
+To c re a t e o t h e r l ayo u t s , yo u c a n s p l i t t h e c u r re n t p a n e i n h a l f e i t h e r h o r i zo n t a l l y o r ve r t i c a l l y. D o t h i s w i t h t h e
+menu at the top right of the pane, use the command palette, or set a [Use hotkeys].
+
+![[Pasted image 16.png]]
+
+3. If you want a sticky pane that does not get replaced even when it’s active, ==pin it==.
+
+This is great if you’re working on something and want to use the other panes as temporary reference panes. Pin
+it to make sure it never gets replaced.
+
+![[Pasted image 17.png]]
+
+Pinned panes will have a highlighted pin icon instead of a grey one.
+
+4. Use ==linked panes== for previewing.
+
+When creating [[Linked panelinked panes]], CtrlCmd+click the preview or edit button when a Markdown file
+is open.
+
+When linked to another pane, the panes’ scroll position will be synced, and if you open a file in one pane, the
+other pane will open the same file.
+
+[[Linked paneLinked panes]] will be marked with a link icon. You can hover the link to see which pane it’s linked
+to, or click the icon to release it, so that they are no longer linked.
+
+For more information see [[Linked panelinked panes]].
+
+![[Pasted image 18.png]]
+
+5. Panes can be ==rearranged by dragging==.
+
+Grab the icon in the upper left corner to arrange them however you need. For detailed information, see [Pane
+layout].
+
+Useful tips
+
+```
+1. You can resize the panes however you want, by dragging the resize handle that ’s between each pane.
+```
+```
+2. Your file layout, including their sizes, will be remembered when you close the app, so don’t wor r y about
+having to set them up every time you open the app!
+```
+
+##### Rename notes
+
+If you’re already editing the note, you can rename it simply by editing the text in the title
+
+![[Pasted image 6.png]]
+
+If you want to rename a note that you’re not editing, go to [file explorer], right-click on the note or folder and
+choose “Rename”
+
+![[Pasted image 7.png]]
+
+An even faster way is to press F2 while your mouse is over a note, which will take you straight to the renaming
+function.
+
+##### Create notes
+
+Notes are created in a few ways, depending on your workflow
+
+```
+1. Note-first approach. If you need to create a note, you can do so in [File explorer]. The keyboard shortcut
+is CtrlCmd+N. Also, if you have the [Command palette] plugin enabled (it’s on by default), press
+CtrlCmd-p and type ‘new’, then select 
+```
+```
+2. Link-first approach. If you like to freely create notes, just use an [Internal link] to link to any note name (it
+doesn’t need to exist at the time of creating the link). To write in the newly created note, simply click on
+the link name. It will be automatically created in your Vault and ready to type!
+```
+![[Pasted image 3.png]]
+
+After creating it, the note title will appear in the internal link auto-completion, so you don’t need to type out the
+note name every time. When you type [[ a popup will come up showing all the notes in your vault. Just type
+until you see the one you want, and hit Return or click on it, and the name will be automatically filled in.
+
+If you already have folders set up in [File explorer], you can right-click on a folder to create notes inside it
+
+![[Pasted image 4.png]]
+
+There are also buttons at the top of the file explorer for creating new notes or folders.
+
+Obsidian automatically saves your note two seconds after you stop typing, or if you close a pane. You can also
+manually save at any time by typing CtrlCmd-S
+
+### Related
+
+```
+[Rename notes]
+```
+### Licenses & add-on services
+
+##### Commercial license
+
+
+### About Obsidian commercial license
+
+Obsidian is free for personal use. For commercial (business) use in a company of two (2) or more employees, a
+commercial license is required. Business use includes any work-related activities such as capturing meeting
+notes, maintaining team project notes, configuring an organizational wiki, and similar note taking, document
+management, or knowledge management functionality.
+
+To p u rc h a s e a c o m m e rc i a l l i c e n s e , p l e a s e v i s i t our pricing page.
+
+### Frequently asked questions
+
+Can I try Obsidian for commercial use before paying
+
+Yes. You may evaluate Obsidian for commercial use for 14 days.
+
+Do non-profit organizations require a commercial license
+
+No, non-profit organizations may use Obsidian without a commercial license.
+
+Are there bulk discounts
+
+For bulk discount inquiry, please contact us at support@obsidian.md.
+
+How can I ask my company to purchase licenses for me or my team
+
+Ask your IT department to contact support@obsidian.md if they have questions or require any specific
+paperwork.
+
+Do I need a commercial license
+
+From our EULA
+
+```
+If you use OBSIDIAN for commercial use, you must obtain a commercial license. Commercial use is defined
+as using OBSIDIAN for work-related activities in a company with two (2) or more employees.
+```
+Some examples to help determine if you require a commercial license
+
+```
+Q1. I’m a freelancerwriterblogger, do I need a commercial license
+```
+```
+A Unless you hire at least one additional person, you do not need a commercial license.
+```
+```
+Q2. I’m a teacherprofessor and I use Obsidian for my teachinglectures, do I need a commercial license
+```
+```
+A Obsidian usage for education-related activities within schools and other recognized educational
+institutions does not require a commercial license.
+```
+```
+Q3. I’m a researcher and I use Obsidian for my research, do I need a commercial license
+```
+```
+A If your organization consists of two or more people and the research is on behalf of a commercial
+product, then you would require a commercial license. If the research is not for any commercial purpose,
+then you may use Obsidian without a commercial license.
+```
+
+```
+Q4. I use Obsidian during work for things like writing down team processes and taking notes for team
+meetings, do I need a commercial license
+```
+```
+A If you are a single-person company, then you do not require a commercial license. Otherwise, if you have
+more than one person in the company, then you would require a commercial license.
+```
+```
+Q5. I use Obsidian to store all of my knowledge, both personal and professional, because it’s difficult to
+separate them. Do I need a commercial license
+```
+```
+A If your notes contain content directly related to work projects or processes for a greater-than-one-
+person company, then you require a commercial license.
+```
+If you still have questions regarding the commercial license requirements, email us at support@obsidian.md and
+describe your situation in detail.
+
+##### Obsidian Unlimited
+
+Obsidian Unlimited is a way to contribute a custom amount to Obsidian develop as you wish. You can also
+contribute multiple times at any time.
+
+You can find this option at the bottom of the page in your Obsidian account page after logging in.
+
+Special thanks to the VIPs who proposed this “feature” to support Obsidian even more.
+
+==Contributing to Obsidian Unlimited does not let you give any additional features or benefits.== For this reason,
+we recommend upgrading to [Catalyst license] first, if you’re looking to access [Insider builds] or get cool
+badges in our community.
+
+Note we’ve set the minimal amount to $5 (so that processing fees would make sense).
+
+##### Obsidian Sync
+
+Obsidian Sync™ is a paid service to sync notes between vaults on various devices.
+
+### How Obsidian Sync works
+
+Obsidian Sync is fairly simple once you hook up local vaults from multiple devices to the same remote vault,
+changes will be automatically synced between these local vaults, except for files and folders you instruct
+Obsidian to ignore.
+
+### Features
+
+Currently, Obsidian Sync features
+
+```
+End-to-end encryption.
+```
+```
+Version history integrated into Obsidian.
+```
+```
+View & restore deleted files.
+```
+```
+Synchronize settings, themes, CSS snippets, plugins, and plugin settings.
+```
+
+```
+Selective sync.
+```
+```
+Exclude certain folders.
+```
+```
+To g g l e sy n c i n g fo r i m a g e s , a u d i o , v i d e o , P D F, a n d u n s u p p o r t e d f i l e s.
+```
+```
+Switch between multiple remote vaults.
+```
+In the future, we’ll improve Obsidian Sync with
+
+```
+Vault sharing
+```
+### Enable Obsidian Sync plugin
+
+You can enable Obsidian Sync by enabling the “Sync” plugin under Settings = Core plugins.
+
+### Setting up remote vaults
+
+Warning We do not recommend using third party sync services to sync the same vault with Obsidian Sync.
+[[#Third party syncMore about this later]].
+
+To s t a r t sy n c i n g , f i r s t yo u n e e d t o c re a t e a re m o t e va u l t t h a t s t o re s yo u r e n c r y p t e d d a t a.
+
+To d o t h a t , g o t o S e t t i n g =  S y n c =  P i c k re m o t e va u l t =  C h o o s e =  C re a t e n e w va u l t.
+
+After creating it, you can immediately connect to the vault by clicking on the “Connect” button next to it.
+
+You can choose to either star t syncing immediately after connec ting, or choose folders to ignore.
+
+Set encryption password
+
+By default, you need to set an encryption password for your vault. This password is used to encrypt and decrypt
+your data and is extremely important.
+
+You’ll be asked for the password any time you setup sync with an encr ypted vault. ==If you forget or lose the
+password, your data will remain encrypted and unusable forever. We are unable to recover your password or any
+encrypted data for you.== Your local files are not affected.
+
+You can also choose to tur n off the “Custom end-to-end password” option to leave managing the encr yption key
+to us. This is still fairly secure and provides the convenience of not having to remember a password.
+
+### Check sync status
+
+After connecting to a remote vault, you can check the current sync status in the bottom status bar. You can
+hover over the status icon to read more about what’s going on.
+
+Clicking on the status icon will open up sync settings as a shortcut.
+
+### Version history
+
+
+As you edit your notes, versions are saved approximately every 10 seconds. ==Version history is only available
+for notes, not attachments.==
+
+You can right click a file in the file explorer pane to see its version histor y. This option is also available in the more
+options menu.
+
+After selecting a version in the left column in the version history screen, you can restore the file to this version by
+clicking on the “Restore” button.
+
+### Deleted files
+
+After you delete a file, you can view it in Setting = Sync = Deleted files = View.
+
+Clicking on a deleted file will open its version history. You can then choose to restore the file back to a previous
+version.
+
+### Selective sync
+
+You can selec tively sync files by folder or file type. ==Selec tive sync only applies to future changes. Any files
+that have already been uploaded will not be deleted even if you choose to ignore them. Please be sure to
+configure it before starting the sync process.==
+
+Exclude folders
+
+You can uncheck folders in Settings = Sync = Excluded folders = Manage to prevent them from getting
+synced.
+
+Excluded folders will be ignored when both uploading and download changes.
+
+##### File types
+
+You can toggle sync for images, audio, video, PDFs, and unsuppor ted files under Settings = Sync = Selec tive
+sync.
+
+### Synchronizing settings
+
+In addition to your notes and attachments, Obsidian Sync offers individual toggles to synchronize these files
+
+```
+The main app settings, including editor settings, files & links settings, etc.
+```
+```
+Appearance settings, including dark mode, selected theme, and enabled snippets.
+```
+```
+Themes and snippets that has been downloaded.
+```
+```
+Hotkeys.
+```
+```
+Which [Core plugins] are enabled.
+```
+```
+Core plugin settings.
+```
+```
+Which community plugins are enabled.
+```
+
+```
+Downloadedinstalled community plugins, and their settings.
+```
+You can choose which ones to synchronize with your remote vault to best suite your use case of Obsidian.
+
+Keep in mind that Obsidian does not apply your settings until you restart the application, or reload the vault. This
+normally isn’t a problem on mobile since the app restarts often, but you may notice that settings you set on one
+desktop device is “synced” to another device, but doesn’t take effect until the next restart.
+
+Sync will respect your selection of the settings folder override in case you’ve set it to a folder other than
+.obsidian. You can take advantage of this to create different profiles in your remote vault to sync your
+settings. A common use case, for example, is to use a different profile for mobile devices vs desktop devices.
+
+##### Settings version history
+
+If something goes wrong, and you lost some of your settings, you can always revert the affected settings file
+through the “Settings version history” section in Sync.
+
+### Third party sync
+
+If you are using Obsidian Sync, we do not recommend using third party sync services like Dropbox, Google Drive,
+OneDrive, or iCloud to sync the same vault between the same devices using Obsidian Sync. Doing so may cause
+conflicts, duplicate files, or in the worst case, could lead to corrupted files.
+
+If you do setup Obsidian Sync and a third party sync service to sync a vault between two devices, then the
+following will happen
+
+```
+If Obsidian Sync “wins” the race and syncs your file first, then your third party sync service will generate a
+“conflicted copy”.
+```
+```
+If your third party sync service “wins” the race and syncs your file first, then Obsidian Sync will attempt to
+merge the two slightly different versions, often causing the last few characters you just typed to be rolled
+back.
+```
+If you wish to maintain a backup of your vault using a third party sync service, you can still do so by setting up
+your sync provider on your primary single device, but not on your secondary devices. This will ensure that your
+third party sync service does not “race” with Obsidian Sync.
+
+### FAQ
+
+What is end-to-end encryption
+
+End-to-end encryption means the data is encrypted from the moment it leaves your device, and can only be
+decrypted using your encryption key once it’s back on one of your devices.
+
+We do not have the capability of reading your data, nor do any potential eavesdroppers, such as your internet
+service provider.
+
+In the rare case of a complete server breach, your data will remain encrypted, and nobody will have the ability to
+decrypt your files without knowing your password.
+
+
+How many remote vaults can I have
+
+Each account with Obsidian Sync can have up to 5 remote vaults.
+
+How long is version history kept
+
+Version histories are kept for up to one year before we clean it up.
+
+How large can each remote vault be
+
+At the moment, each remote vault can have up to 4 GB of data, including version history.
+
+Is my data encrypted on my hard disk
+
+No, your data is still in plain text on your hard disk. If you wish to encrypt it from people who use your computer,
+you should look for a disk encryption solution.
+
+How long is my data kept after my subscription expires
+
+Data in your remote vaults, including version history, is kept for one month for you, after your subscription
+expires.
+
+As long as you renew within one month, there should be no impact on your usage.
+
+Can I use Obsidian Sync as a backup solution
+
+Obsidian Sync is designed as a data synchronization service, rather than a backup service.
+
+With version history, it does provide some backup features, however we still recommend having additional
+backup measures.
+
+Obsidian Sync is currently in beta testing, so we strongly recommend having backups, in case of software bugs
+and glitches.
+
+Should I pick my own encryption password
+
+Pick your password if you require the highest level of security and privacy. This guarantees that anyone who
+doesn’t know your password will never be able to read your notes.
+
+Letting us manage your encryption key is more convenient, and you do not risk forgetting or losing your
+password.
+
+Your local vault is not affec ted by this option. If you properly backup your local vault, this may not be a problem
+for you.
+
+Is the end-to-end encryption strong
+
+We use industry-standard AES–256 to encrypt your data. AES–256 is a military-grade encryption specification
+that is widely used in online banking.
+
+Here are the technical details for those interested
+
+
+```
+Key derivation function used scrypt with salt
+```
+```
+Encryption algorithm used AES–256 using GCM
+```
+What does the vault limit exceeded error mean
+
+Each vault using Obsidian Sync has a maximum size of 4gb. This error indicates your vault has exceeded that
+limit in size. Don’t forget attachments and version history contributes to the maximum, so you may exceed your
+4gb limit even if your vault’s actual size is less than 4gb.
+
+If you see this error, Obsidian can help you identify and purge large files from the Vault. Go to the Obsidian Sync
+settings in Preferences = Sync and look for the “Vault size over limit” options.
+
+##### Obsidian Publish
+
+Obsidian Publish™ is a paid hosting service for your notes.
+
+For instructions on how to publish your notes from within the Obsidian app, refer to the [[PublishPublish
+plugin]].
+
+### Privacy
+
+You have total control over what to publish via the [[PublishPublish plugin]] - either your entire vault or just
+selected notes within your vault. As for any notes you choose not to publish, you can be confident that those
+notes remain completely private, and Obsidian Publish has no knowledge of them.
+
+### Backing up
+
+Please note that Obsidian Publish is not to be used as a backup for your content. Make sure you always have a
+personal backup copy of your site using your preferred backup method. Our efforts on Obsidian Publish will be
+more focused on functionality, ease of use, and site availability.
+
+### Demo
+
+There’s a good chance that you’re already viewing this article on our official site powered by Obsidian Publish.
+
+If not, you can visit it here httpspublish.obsidian.mdhelp.
+
+### What’s included
+
+The Obsidian Publish service lets you create your site directly from within the Obsidian app by choosing the
+notes you want to publish.
+
+To c u s t o m i ze yo u r s i t e , yo u c a n c h o o s e b e t we e n l i g h t a n d d a r k m o d e , a n d a l s o t o g g l e b e t we e n re a d a b l e l i n e
+length and full page length.
+
+There are several components which can be turned on or off from the [[PublishPublish plugin]]. Changes to
+these options will be reflected on your published site once the cache clears, typically within 5 minutes.
+
+
+Navigation
+
+Enabling this option adds a navigation sidebar displaying all published pages and the folders that contain them.
+Viewers will see the current open note highlighted, and can click on any other note to navigate.
+
+Search bar
+
+Adds a search bar to page. This bar can be used to search for pages, aliases, and headings within pages. It does
+not currently search through the full text content of the site.
+
+Graph view
+
+Displays a local graph of the page currently open. This uses the same rendering engine as the [Graph view]
+plugin in Obsidian.
+
+Ta b l e o f c o n t e n t s
+
+Displays a table of contents for the page currently open. The list is generated from headings within the page,
+similar to the [Outline] plugin. Viewers navigating the note will see the corresponding heading highlighted as
+they scroll, and can click on another heading to immediately navigate to it.
+
+Backlinks
+
+Displays a section at the end of each page called “Linked to this page”, containing backlinks from other pages. If
+there are no backlinks, the section will not be displayed.
+
+Ta g s
+
+When the reader clicks on a tag, they can see a list of other pages that includes the same tag.
+
+Hover preview
+
+When hovering over links, their content is displayed within a popup box. This works similarly to the [Page
+preview] plugin in Obsidian.
+
+Custom CSS
+
+To c u s t o m i ze t h e s t y l i n g o f yo u r s i t e , yo u c a n u p l o a d a publish.css. This file must be stored in the root folder
+of your site. You can use your existing theme and add some extra tweaks for publish in publish.css.
+
+Favicon
+
+To c h a n g e t h e fav i c o n o f yo u r s i t e , yo u c a n u p l o a d png icons of any size in the format of favicon-32.png or
+favicon-32x32.png. You can also upload the file favicon.ico. These files can be stored in any folder. The
+current recommendation (as of 2020) is to provide sizes 32 × 32 , 128x128 , 152 × 152 , 167x167 , 180x180 ,
+192x192 , and 196x196.
+
+Custom JS
+
+
+If you wish to execute your own JavaScript code to change the visitor experience, or add various integrations like
+Discus!, Discourse, etc. you can do so by uploading publish.js inside the root of your vault. Note that these
+scripts will only run for visitors to your custom domain.
+
+Disallow search engine indexing
+
+This option adds a meta noindex tag to all your pages so search engines like Google does not index your site.
+Note that search engines won’t be able to index your site anyway if it’s password protected.
+
+Google Analytics
+
+If you wish to setup Google Analytics for your site, first make sure your local laws and regulations allows. Then,
+you just need to put the tracking code, in the form of UA-XXXXX-Y into the text box and your site will
+automatically track page views. Note that Google Analytics is only available to visitors from your custom domain.
+
+When testing Google Analytics, please make sure to disable any ad-blocking browser extensions like uBlock
+Origin which blocks Google Analytics scripts from running.
+
+Also, Obsidian Publish isn’t directly compatible with Google Tag Manager at the moment - you can set it up using
+custom javascript if you wish to use Google Tag Manager instead of Google Analytics.
+
+### Custom domain
+
+You can setup a custom domain or subdomain for your Obsidian Publish site. Cur rently, we don’t yet have a way
+to provision SSL certificate on your behalf, so you need to resort to either an SSL-enabled server of your own, or
+to setup your site on CloudFlare, which provides SSL for free.
+
+You can also setup Obsidian Publish as a sub-URL of a site you own. For example, httpsmysite.commy-
+notes. To achieve this, you must host your own server and proxy all requests to our server at
+httpspublish.obsidian.md.
+
+Continue reading for setup details.
+
+##### CloudFlare setup
+
+The easiest way to setup a custom domain or subdomain is by making an account with CloudFlare and letting
+CloudFlare manage your domain. This allows you to add SSL to your site for free, as well as ensure your site is
+fast wherever in the world it’s accessed from. Typically users will host their Obsidian Publish content on a root
+domain (e.g. mysite.com ) or an immediate subdomain (e.g. notes.mysite.com ). These instructions work
+for both cases.
+
+```
+1. Open Cloudflare to the domain you wish to add Publish to (e.g. mysite.com , even if you want a
+subdomain like notes.mysite.com ).
+2. Go to DNS and click Add Record. Select CNAME, and in ‘name’ enter the domain or subdomain you wish
+(e.g. notes.mysite.com ). In ‘target’, enter the value publish-main.obsidian.md. Do not include
+your personal sub-URL in this value, as Obsidian Publish handles this from your configuration.
+3. Go to SSLTLS and set the SSLTLS encryption mode to Full. This will configure the SSLTLS certificate
+automatically.
+```
+
+Once you are done with configuring CloudFlare, you can head to your site options in Obsidian, and set the URL to
+your domain or subdomain. This allows our server to associate the domain to your site.
+
+Troubleshooting If your custom domain setup ends up in a redirect loop, it ’s likely that the encryption mode in
+CloudFlare to Flexible instead of Full.
+
+If you wish to configure both mysite.com and [httpwww.mysite.com](httpwww.mysite.com) to Obsidian Publish, you will need to create
+a Page Rule as follows
+
+- URL match [httpwww.mysite.com](httpwww.mysite.com)
+- Foward URL - 301 Permanent Redirect
+- Redirect URL httpsmysite.com$1
+
+Once you create the page rule, you should also create a CNAME record for [httpwww.mysite.com](httpwww.mysite.com) just like you
+created for mysite.com
+
+##### Proxyredirect setup
+
+If you wish to host your own web server and setup your own SSL encryption, you can choose this option. If you
+are already hosting a website under your domain or subdomain, you can also use this option and setup your
+website to load your Obsidian Publish site under a specific URL path, instead of hosting the full site.
+
+Simply proxy all requests under that URL path to httpspublish.obsidian.mdserve
+url=mysite.commy-notes... and configure the site options in Obsidian to the same URL path by
+setting Custom URL to mysite.commy-notes.
+
+NGINX
+
+```
+location my-notes {
+proxy_pass httpspublish.obsidian.mdserveurl=mysite.commy-notes;
+proxy_ssl_server_name on;
+}
+```
+Apache
+
+Add to .htaccess 
+
+Note mod_rewrite must be enabled, and you may also need to configure SSLProxyEngine
+
+Netlify
+
+```
+[[redirects]]
+from = httpsmysite.commy-notes
+to = httpspublish.obsidian.mdserveurl=mysite.commy-notessplat
+status = 200
+force = true
+```
+```
+RewriteEngine on
+RewriteRule ^my-notes(.)$ httpspublish.obsidian.mdserveurl=mysite.commy-notes$1 [L,P]
+```
+
+Vercel
+
+In vercel.json configure rewrites
+
+```
+{
+...
+rewrites [
+{
+source my-notes,
+destination httpspublish.obsidian.mdserveurl=mysite.commy-notes
+},
+{
+source my-notespath,
+destination httpspublish.obsidian.mdserveurl=mysite.commy-notespath
+}
+]
+}
+```
+Supported HTTP X-Headers
+
+Alternatively, if your proxy service does not allow query paths, you can use httpspublish.obsidian.md
+with a custom header x-obsidian-custom-domain set to your site url mysite.commy-subpath.
+
+##### Custom domain post-setup issues
+
+Once you setup your custom domain, if you’ve visited your site from your previous
+httpspublish.obsidian.mdslug link, you may have to clear your browser cache for certain things (like
+fonts, graphs, or password access) to work properly. This is due to the cross-domain security restrictions that
+are imposed by modern browsers. The good news is that readers of your site should never run into issue this if
+you only let visitors use your custom domain.
+
+##### Redirect old site to custom domain
+
+If you’d like to redirect your visitors from the old publish.obsidian.md site to your new custom domain, there
+is an option you can enable in the custom domain settings page which will do just that.
+
+### Coming up
+
+Obsidian Publish is still in its early days. Here are some features we plan to add
+
+```
+Full custom domain support (with SSL certificate provisioning).
+Full text search.
+More built-in themes.
+```
+Please let us know if you have any Obsidian Publish feature requests by submitting a forum request here.
+
+### Pricing
+
+For the pricing of Obsidian Publish, please visit our pricing page.
+
+
+### Te c h n i c a l d e t a i l s
+
+Obsidian Publish uses Cloudflare as the CDN (content delivery network) to distribute your site across the globe
+for a faster access. This involves caching copies of the files of your site on some of the 200+ data centers to
+ensure the lowest latency for your readers and the site remain speedy and loads fast even if your viewer lives far
+away from our primary servers.
+
+However, this does mean that when you change site settings, publish new content, or unpublish content, visitors
+might not see the latest version for a short while. Currently, our cache is configured to persist for an hour before
+it has to be “re-validated” to ensure the content hasn’t changed.
+
+If you’ve just published items but you are still seeing an older version, you can typically perform a “hard refresh”
+by holding the reload button and choosing “Hard reload” in the dropdown menu. Failing that, you can try clearing
+the browser cache or disabling cache using the developer tools in the network tab.
+
+##### Hosting media files
+
+While Obsidian Publish allows you to upload video clips, it is not optimized for video delivery. As such, your
+visitors may find that the videos on your site may not deliver a great experience.
+
+We recommend using a proper video hosting service like YouTube or Vimeo to host your videos for Obsidian
+Publish. The advantages of using a proper video hosting site includes
+
+- Automatic re-encoding ensures that your videos can be played on all mobile devices regardless of what
+encoding format you used in your original file.
+- Dynamic quality adjustment based on bandwidth availability and ensures that videos can be played smoothly
+without constantly pausing for “buffering”.
+- High efficiency video compression to ensure that visitors don’t blow through their data cap when viewing your
+site.
+- Global CDN allowing your videos to be loaded fast regardless of where your visitor is located in the world.
+
+### Related
+
+Refer to the [[PublishPublish plugin]] for details on publishing your notes.
+
+##### Refund policy
+
+## Obsidian Catalyst and Unlimited
+
+[Catalyst license] purchases and Obsidian Unlimited donations are to support Obsidian’s development. ==They
+are not refundable.==
+
+Although they might give you exclusive early access to insider builds or feature betas, we do not sell them as a
+product.
+
+We cannot provide refunds for Catalyst purchases. Thanks for your understanding!
+
+If there is any issue with a transaction, please reach out to support@obsidian.md or on Discord.
+
+
+## All other services
+
+For all other services and licenses, including [Commercial license], [Obsidian Publish], and [Obsidian Sync], you
+can request a full refund within 3 days of purchase with no questions asked. Please reach out to
+support@obsidian.md or on Discord.
+
+Beyond 3 days, if you need a refund due to exceptional circumstances, feel free to reach out to us too.
+
+##### Catalyst license
+
+Obsidian is free for personal use. A Catalyst license is an optional license that provides the following benefits
+
+```
+1. It gives you early access to the latest, cutting edge versions of the app;
+2. Provides you cool badges on our community Discord server and forum; and
+3. It helps support the development of Obsidian (thank you !!)
+```
+There are three tiers of the Catalyst license Insider ($25), Supporter ($50), and VIP ($100) - each of which gives
+you [[Insider buildsaccess to insider builds]].
+
+Please note that Catalyst is optional and ==does not give you any additional app features==.
+
+To u p g r a d e t o C a t a l ys t , p l e a s e v i s i t our pricing page.
+
+If you use Obsidian for work-related activities, you may need a [[Commercial licensecommercial license]].
+
+## FAQ
+
+### How do I get my shiny badges after I upgrade
+
+Congratulations! After upgrading, you will find two buttons in the “Catalyst” section in your Account page.
+
+##### Discord badge
+
+==Please make sure to join our Discord server first.==
+
+In your account page, click on “Get Discord badge”, which will authenticate with Discord and add the badge for
+you automatically.
+
+##### Forum badge
+
+==Please make sure you’ve registered an account at our forum with the same email address.==
+
+In your account page, click on “Get forum badge” , which will add the badge to your forum account.
+
+If your forum email doesn’t match your account email, the badge can’t be added. In that case, please change
+your email in the forum to be consistent with your account email.
+
+
+Please note that your forum badge is not a “badge” in the forum system, but a shiny gold tag right next to your
+name in all of your posts.
+
+### What do I get when I pay for Catalyst
+
+You get access to our [Insider builds]. On top of that, if you get Supporter or VIP tier, you can access an
+exclusive Discord channel to hang out with the developers.
+
+When we do closed beta for a big new feature (such as mobile apps or a Typora-like WYSIWYM mode), we will
+roll out the beta to VIPs, Supporters, Insiders, and then everyone else, fixing issues along the way.
+
+### What payment methods do you accept
+
+Our website accepts credit cards and some debit cards. This method is the quickest and easiest.
+
+If you need to pay via PayPal or Wechat, it’s also possible. Please find the instructions by logging in on our
+website and select the “Catalyst” option.
+
+### Obsidian
+
+##### iOS app
+
+The iOS app is now publicly available, and a link to the app store listing can be found at
+httpsobsidian.mdmobile
+
+## Where are my vaults stored
+
+If you choose, you can store your vaults in iCloud Drive. These vaults can be found in your iCloud Drive folder,
+under an app folder named “Obsidian” that shows the Obsidian logo.
+
+If you choose not to use iCloud for a vault, then it will be stored in the sandboxed file system of the Obsidian app.
+The local vaults are accessible from any other apps that support picking a folder from the file system. As such,
+apps like Working Copy can be used to sync with Obsidian’s local vaults.
+
+==Be aware that if you choose to store your vault locally, they will be automatically deleted by iOS when you
+uninstall Obsidian’s app.==
+
+## Sync
+
+### Quick start
+
+If you already have a vault on your desktop, here’s the two ways to sync your vault to mobile and access it
+
+```
+[[#iCloud Drive Sync]]
+[[#Obsidian Sync]]
+```
+
+The two current officially supported sync solutions are iCloud and Obsidian Sync.
+Working Copy (git) is another alternative that has been tested to work with Obsidian on iOS.
+
+Currently, there is no known support for the following sync services on iOS yet
+
+- Dropbox
+- Google Drive
+- OneDrive
+- Syncthing
+
+If you find out a way to sync using these services on iOS with Obsidian, we would be glad if you can join our
+Discord server and teach us how to set it up.
+
+In theory, any third party sync providers that can provide background-sync for a specific folder on your device
+should be able to work, but we are not aware of any other than Working Copy. This is due to the limitations of the
+highly complex mechanism of cross-app file sharing in iOS, unlike Android which allows easy cross-app file
+sharing. Because of this, most third party sync providers don’t have a proper implementation for background
+sync on iOS.
+
+Currently Obsidian does not support third party sync providers that expose a virtual file system through
+FileProvider. We will be attempting this in the future as an improvement.
+
+### Obsidian Sync
+
+You can follow the same steps as Android’s sync as shown below, making sure that you create a non-iCloud
+folder as we do not recommend using both Obsidian Sync and iCloud Sync concurrently, which has been
+reported to cause data loss due to [[Obsidian Sync#Third party syncrace conditions]].
+
+![[Android app#Obsidian Sync]]
+
+### iCloud Drive Sync
+
+To s e t u p a new synced vault through iCloud Drive
+
+```
+1. Start the iOS app and choose “Create a new vault”;
+2. On desktop, using the “Open another vault” option, point to the new vault location in iCloud.
+```
+To s e t u p a n existing vault to be synced through iCloud Drive
+
+```
+1. Start the app and choose “Create a new vault”;
+```
+```
+2. Name it the same as your desktop vault to make [[Using obsidian URIinter-vault URIs]] work;
+```
+```
+3. Wait for iCloud to sync this empty folder to your desktop;
+```
+```
+4. Copy and paste everything under your vault to this empty folder, this will now be your synced folder
+location;
+```
+```
+5. On desktop, using the “Open another vault” option, point to the new vault location in iCloud;
+```
+```
+6. Wait for iCloud to sync everything to your mobile device.
+```
+
+### Working Copy
+
+You can alter natively setup Working Copy to use Git to sync your vault on iOS. To do this, you should create an
+empty local vault on your device first, then you can “Setup Folder Sync” and select a local vault inside the
+Obsidian app. Then, you can manually commit & push.
+
+### Third party sync support
+
+Many users asks why Obsidian for Mobile doesn’t support their preferred sync solution. Here’s a brief
+explanation on the current state of mobile sync support.
+
+The thing about Obsidian that’s different from other apps like 1Writer and iA Writer is that Obsidian works on top
+of a vault rather than a single note. Many of the core Obsidian functionality depend on the whole vault and all the
+files inside, such as the link auto-complete, image embedding, tag pane, backlinks, and all the cross-note
+functionality.
+
+In contrast, most Markdown editing apps simply “open” a single note, let the user perform edits, then save the
+note back. Because of this, the OS and third party sync providers typically only provide an API for
+accessingworking with a single file, but not so much for working with a vault (folder of files with potentially
+subfolders).
+
+For sync, a regular markdown editor app can simply implement the basic “download file when you open a
+selected file” and “upload the file back when you press save”. Obsidian has to download the whole vault to be
+useful, and keep track of all the modified files (like for example, when you perform a file rename, we might
+update a bunch of other files for links that has changed due to the rename). On top of that, we need a way to
+monitor for changes through the sync solution to be able to update our internal caches when files change, to
+provide accurate links.
+
+Keeping all that in sync with a third party sync provider would be quite tedious - and this is actually part of the
+reason why most sync providers don’t make a proper sync client for mobile and you have to use a third party app
+(like DropSync or FolderSync) to do it. Unfortunately, such apps don’t exist on iOS because of app sandboxing.
+
+## Known issues
+
+### iCloud folder on macOS
+
+If you find yourself unable to drag & drop things into the iCloud folder in Finder on macOS, please download the
+latest Obsidian Desktop release from httpsobsidian.md as it contains a fix for this issue. Once it’s installed,
+running the app should automatically cause iCloud to update the folder permissions. If this does not work right
+away, you may need to restart your machine.
+
+### Paste menu sometimes not appearing
+
+Some users runs into an issue where tapping on the cursor does not show the paste menu. As a workaround, you
+can use the three-finger tap gesture to trigger a global edit menu which can be used to paste into the text.
+
+##### Mobile app beta
+
+
+## Public release
+
+The mobile apps are now officially publicly available. You can find the download links for the public versions at
+httpsobsidian.mdmobile
+
+## Documentation
+
+For more details on how to use Obsidian for Mobile, including guides for setting up sync, see [Obsidian Mobile].
+
+## Insider builds
+
+If you’re a holder of the [Catalyst license], you may wish to join our [[Insider buildsinsider builds]] for mobile.
+
+To ke e p fe e d b a c k a n d re l e a s e s c e n t r a l i ze d a s we d o n ’ t h ave t h e c a p a c i t y t o d e b u g a n d c o l l e c t fe e d b a c k v i a
+email, we ask Catalyst users who would like to beta test to go through the following steps
+
+### Step 1 join our Discord
+
+First of all, please join our Discord.
+
+### Step 2 claim your Catalyst badge to access #insider-build-mobile channel
+
+If you don’t have your badge yet, [[Catalyst license#Discord badgeyou can get it in your Account page]].
+
+### Step 3 get the app via TestFlight (iOS) or APK (Android)
+
+Once you get your badge, you should be able to see the #insider-build-mobile channel along with regular
+channels like #general and #publish.
+
+To f i n d t h e i n s t r u c t i o n s fo r i n s t a l l i n g t h e m o b i l e a p p s , g o t o #insider-build-mobile , and open pinned
+messages.
+
+On Discord web and desktop, you can open pinned messages of a channel by clicking on the pushpin icon near
+the search bar at the top. On Discord mobile, you’ll need to swipe left to reveal the right sidebar and tap on the
+pushpin icon at the top.
+
+For the iOS app, look for the TestFlight link. Make sure to open the link on your iPhone or iPad, rather than on
+your computer. For the Android app, install the APK from the latest pinned messages if there are several of them.
+
+## How do I provide feedback
+
+Before reporting an issue or submitting a feature request, please visit the list of known issues on our forum to
+see what’s already known and on the roadmap.
+
+
+The current group being rolled out can access the #insider-build-mobile channel on Discord as well as the
+new Mobile category on the forum.
+
+To ke e p t r a c k o f b u g re p o r t s a n d fe a t u re re q u e s t s , p l e a s e d i re c t t h e m t o t h e fo r u m a s u s u a l. T h a n k yo u fo r t r y i n g
+out our beta!
+
+##### Android app
+
+The Android app is now publicly available, and a link to the Play store listing can be found at
+httpsobsidian.mdmobile
+
+## Where are my vaults stored
+
+On Android, the Obsidian home folder is stored in the public documents folder under DocumentsObsidian.
+The public Documents folder is typically stored in SD card or emulated storage.
+
+Any folder in this home folder will be considered a vault. If you sync or copy a vault folder into this directory, it
+can be recognized when you open Obsidian.
+
+## Sync
+
+On Android, you may choose to use [Obsidian Sync] to synchronize your files, or use any third party sync
+provider that can perform sync in the background.
+
+### Obsidian Sync
+
+As with Obsidian desktop, we provide our built-in paid [Obsidian Sync] service.
+
+To s e t u p a sy n c e d va u l t t h ro u g h O b s i d i a n S y n c , f i r s t c re a t e a n e w e m p t y l o c a l va u l t. Yo u s h o u l d n a m e i t t h e
+same as your desktop app to make [[Using obsidian URIinter-vault URIs]] work.
+
+Once the empty vault is open, open the left sidebar, tap the settings button, and setup Obsidian Sync just like
+you did on Desktop
+
+```
+1. Login to your Obsidian account in the Account tab.
+```
+```
+2. Enable the Sync core plugin.
+```
+```
+3. Open settings, and choose the “Sync” tab under “Plugin options”.
+```
+```
+4. Choose the remote vault to sync with.
+```
+```
+5. Keep the app open until all your files have synced over.
+```
+To v i e w t h e sy n c s t a t u s o f O b s i d i a n S y n c , sw i p e t o p u l l o u t t h e r i g h t d r awe r, a n d yo u s h o u l d s e e t h e s t a t u s
+indicator just like it shows on the desktop app. Tap on it to get more information, such as viewing the sync log to
+debug any issues.
+
+
+### Third party sync
+
+You can also use your prefer red sync solution to keep the local folder on your phone in sync with other devices.
+
+There are apps on the Play Store that let you sync a folder on your phone with other devices, for example
+Dropsync or FolderSync.
+
+## Storage Permission
+
+When starting Obsidian, you may notice that it prompts for permission to access your device’s documents and
+media.
+
+In an ideal world, we’d prefer to only ask for access rights to the vault folders you choose. However, Android’s
+privacy-friendly file permission API (also known as “scoped storage”) has a few restrictions that makes it
+impossible for Obsidian to function properly.
+
+The two biggest roadblocks are
+
+```
+Scoped storage performs many extra permission checks for every single file access, causing significant
+performance degradation when opening and using Obsidian.
+```
+```
+Scoped storage does not provide a way to watch for external changes, which is critical when using
+Obsidian with a third-party synchronization tool.
+```
+Google specifically gives instructions for developers of this kind of apps a special permission. Obsidian belongs
+to two categories in the list of exceptions “document management apps”, and “on-device file search”. Read more
+about it here.
+
+##### Credits
+
+Names are not listed by amount of contribution, but alphabetically (or at least we try!).
+
+### Dev team
+
+```
+Licat (Shida Li)Obsidian office cat
+```
+```
+Silver (Erica Xu)Te a m L i t t l e S i l ve r s
+```
+### Moderators
+
+```
+anthonyg (Anthony Gold)Te a m G o l dThink Tank
+```
+```
+argentumTe a m L i t t l e S i l ve r sLinux masterZotero master
+```
+```
+cotemaxime (Maxime Côté)Linux master
+```
+```
+death_au (website)the MagicianTe a m G o l d
+```
+```
+Eleanor (Eleanor Konik)Halp Obsidian turned me into a dev
+```
+
+```
+koalaExtreme Bug Finder
+```
+```
+Leah (Leah Ferguson)Roll for initiative!Non-techy Apple geek
+```
+```
+liam (Liam Cain) Maker of CalendarPlugin API MasterVolcano Veteran
+```
+```
+mediapathic (Steen Comer)Bad Cop
+```
+```
+nickmilo (Nick Milo)Mappy McMapster
+```
+```
+ReggieGo green or go home
+```
+```
+rigmarole (Chris Lesage)Forum master
+```
+```
+ryanjamurphy (Ryan J. A. Murphy)That funny guyApple FanboyForum master
+```
+```
+Sam Baron (website)Think TankForum master
+```
+```
+Santi Younger (website)Forum master
+```
+```
+WhiteNoiseThink TankZotero masterBug report exterminator
+```
+```
+Carl the TurtleOnline 247Easily triggeredGood and pureGo green or go home
+```
+### Translators
+
+```
+Andrea Brandi (Italian)
+```
+```
+canzi-teacher, 蚕子 (Chinese Simplified)
+```
+```
+Daniel Mathiot (French)
+```
+```
+Henrik Falk (Danish)
+```
+```
+JxhnnyUt8h (Russian)
+```
+```
+k-andzhanovskii, Константин Анджановсĸий (Russian)
+```
+```
+lisachev, Сергей Лисачев (Russian)
+```
+```
+mafsi, (Patrick Danilevici) (Română)
+```
+```
+taksas, 中山 拓海 (Japanese)
+```
+```
+VKondakoff, Валерий Кондаĸов (Russian)
+```
+```
+yo-goto, ぱだわん (Japanese)
+```
+### Builds
+
+```
+jstone for maintaining our builds on flathub
+```
+```
+adamgibbins and ran-dall for maintaining our builds on homebrew
+```
+### Documentation
+
+
+The first version of the help vault was written by Silver. Later part of it was written by @mediapathic, with a big
+help from Reggie. We also got corrections from the many pairs of eyes in the Discord and forum community.
+
+We now accept pull requests to the help vault in our docs repo.
+
+Add your name
+
+If you’re a translator, please make a pull request to add “Your Name (contributed language)” to the section
+above. Please keep the list of names alphabetical, thanks!
+
+If your name is not in English and can’t be alphabetically listed, use this format your-github-username,
+[your name in your language] (Language name).
+
+##### Obsidian
+
+## What is Obsidian
+
+Obsidian is a both a Markdown editor and a knowledge base app.
+
+Used in the most basic way, you can edit and preview Markdown files. But its true power lies in managing
+densely networked knowledge base.
+
+How do we start creating a network, you ask Let’s first start making some [[Internal linkinternal links]]!
+
+## How we’re different
+
+== _We want you to own and control your data_ ==
+
+We believe in plain text for something as important as your knowledge base. You don’t want to put your own
+brain over someone else’s neck, do you Treat your second brain the same way.
+
+Sync is only a utility to facilitate working on multiple devices, the data will always primarily live on your hard disk.
+
+When the file system replaces the cloud, you get flexible options to work with your files you can back them up
+with Dropbox, use Git to do versioning, or encrypt your disk for security. Whatever works on your file system will
+work on your Obsidian knowledge base.
+
+== _Links are first-class citizens_ ==
+
+Links and connections are crucial to discovering the relations between what we know.
+
+Obsidian greatly values this, and encourages it with [Internal link] and [Graph view], among other things.
+
+As John Locke puts it...
+
+```
+The acts of the mind, wherein it exerts its power over simple ideas, are chiefly these three
+```
+1. Combining several simple ideas into one compound one, and thus all complex ideas are made.
+2. The second is bringing two ideas, whether simple or complex, together, and setting them by one another
+
+
+```
+so as to take a view of them at once, without uniting them into one, by which it gets all its ideas of relations.
+```
+3. The third is separating them from all other ideas that accompany them in their real existence this is
+called abstraction, and thus all its general ideas are made.
+- John Locke, An Essay Concerning Human Understanding (1690)
+
+Hierarchy gives us No. 1, and linking gives us No. 2. We’re still unsure what No. 3 entails in the context of note-
+taking, but it might have something to do with programming or macros.
+
+== _Your own toolkit_ ==
+
+Note-taking is a highly personal activity. Naturally there is no single all-encompassing solution for everyone.
+
+Instead of providing you with an opinionated and assembled product, [Obsidian] gives you a foundation and
+numerous functional building blocks to discover and build your own solution.
+
+The foundation is to be able to view files, edit them, and search them. For the minimalist, that’s enough.
+
+On top of that, you can add isolated, independent building blocks to add features to your note-taking
+
+```
+If you’re taking class notes, [Audio recorder] and LaTeX math might be useful;
+```
+```
+If you’re taking work notes, [Slides] and [Backlinks] may come in handy;
+```
+```
+If you’re a researcher, [Graph view] and [Word count] might be essential to your toolkit.
+```
+We don’t expect plugins to be the silver bullet to solve all the problems, but it does get us closer than a monolith
+solution, without all the features that you don’t need cluttering the interface.
+
+We support [[Customizing CSScustom CSS]] and have a [[Community pluginsbeta plugin API]], which will
+enable even more interface customization and support less common use cases.
+
+## Follow our development
+
+Obsidian is in public beta right now. We have a roadmap that you can check out.
+
+Our Twitter handle is @obsdmd, feel free to follow. We mostly tweet about product updates.
+
+##### Index
+
+## About this site
+
+Welcome to Obsidian’s official help vault! This page contains a quick index to the things that you may be
+interested in.
+
+See public hosted version httpspublish.obsidian.mdhelp
+
+If you found mistakes or missing information, you can contribute to this site here
+httpsgithub.comobsidianmdobsidian-docs
+
+
+## Other languages
+
+This help site is also available in other languages
+
+```
+Italiano
+中文
+日本語
+Dansk
+Руссĸий
+Tiếng Việt
+```
+## Credits
+
+[[CreditsOur credits page]] lists all the amazing people who made Obsidian possible.
+
+To re a d m o re a b o u t t h e m a ke r s , s e e t h e about page on our official website.
+
+## Obsidian
+
+### About the app
+
+```
+See [[Obsidianour philosophy for the app]].
+```
+### Getting started
+
+```
+Looking for some functionality Try the [command palette], which contains all available actions you need
+to work with Obsidian. Just press CtrlCmd-P and start typing.
+Learn our flavor of Markdown with [[Format your noteshow to format your notes]].
+Check out some tips on [[Create notescreating new notes]].
+Check out some tips on [[Internal linkcreating internal links]].
+Learn how to [[Embed filesembed other notes or attachments]].
+See the [[Use hotkeysdefault keyboard shortcuts]].
+```
+### Official plugins
+
+![[Core plugins#Current list of official plugins]]
+
+### Advanced guides
+
+```
+[Working with tags]
+```
+```
+[Working with backlinks]
+```
+```
+[Working with multiple notes]
+```
+```
+[Pane layout]
+```
+
+```
+[Working with multiple vaults]
+```
+```
+[Working with multiple cursors]
+```
+```
+[Using obsidian URI]
+```
+##### Obsidian Mobile
+
+
+# Obsidian for Android
+
+See [Android app].
+
+
+# Obsidian for iOS
+
+See [iOS app].
+
+##### Official website
+
+Obsidian’s official website is at httpsobsidian.md.
+
+It’s useful for
+
+```
+1. Grabbing the latest installer if your [Installer version] is too low;
+```
+```
+2. Register an account if you want to purchase [Catalyst license], [Commercial license], [Obsidian Sync], or
+[Obsidian Publish];
+```
+```
+3. Playing a quiz game if you’re confident with your knowledge of the community plugins and themes.
+```
+## Plugins
+
+##### Slides
+
+Slides lets you do simple presentations right inside Obsidian.
+
+## Usage tips
+
+```
+1. To s e p a r a t e s l i d e s , u s e n e w l i n e s a n d t h e --- separator.
+```
+```
+2. To s t a r t a p re s e n t a t i o n , c l i c k t h i s b u t t o n a f t e r o p e n i n g a n o t e 
+```
+![[Pasted image 14.png]]
+
+## Demo
+
+Check out the demo document [Slides demo]
+
+##### Search
+
+![[Search.png]]
+
+Search is a powerful feature, and has the potential to be confusing. In most cases, if you just type what you want
+to find, it will work. But search has many capabilities for narrowing down to find exactly what you want.
+
+## Quick tips
+
+## Start searching
+
+
+You can invoke search by pressing Ctrl-Shift-F or Cmd-Shift-F. You can also customize this hotkey in
+Settings = Hotkeys. When search is invoked, focus will be automatically put in the search bar so you can start
+typing your query right away.
+
+### Search selected text
+
+After you select text, you can search for it by simply invoking search like above.
+
+## Search history
+
+Obsidian will remember your most recently used search queries.
+
+These queries will be presented to you when your search query is empty. You can click on any one of them to
+search for it again, allowing you to easily re-run previous queries.
+
+To c l e a r s e a rc h h i s t o r y, s i m p l y c l i c k o n t h e “ X ” b u t t o n.
+
+## Search Settings
+
+There are a couple of toggles available while searching
+
+```
+Match case toggle case sensitive matching, but note that it can be overridden on a per-search basis
+using the match-case and ignore-case operators explained above.
+Explain search term will show you what the search query actually does in plain terms.
+Collapse results will toggle between just showing matching note names and showing the lines in
+which matches appear. These extended results can be toggled for each note by clicking on the folding
+triangle next to the file name.
+Show more context will expand the display of the matches to show more text around the match.
+Change sort order sorts the results by various orders, similar to how files are sorted in the [File
+explorer].
+```
+## Copy search results
+
+To q u i c k l y a n d e a s i l y t a ke yo u r s e a rc h re s u l t s t o a l i s t , u s e t h e “c o py s e a rc h re s u l t ” o p t i o n.
+
+You can customize whether you want to show paths, which link style to use (wikilink or Markdown link), and how
+you want your list to appear.
+
+## Embed search results
+
+You can embed search results in a note.
+
+For example, if you write
+
+```
+query
+```
+
+```
+embed OR search
+```
+You should see this embedded search view (note it doesn’t work on [Obsidian Publish] as of 20200118)
+
+```
+embed OR search
+```
+## Search syntax
+
+### Combining sub-queries
+
+When crafting a search query, remember that clicking “Explain Search Term” will give an explanation of what is
+being searched for, which can be very useful when debugging a complicated search.
+
+```
+Words in the search query separated by space will be searched independently in each note. For example
+foo bar will find a note that includes both foo and bar anywhere in it.
+Quoted strings can be used to search multiple consecutive words separated by space, or in other
+words, a phrase. So, searching for foo bar with quotes will only find notes that include those words
+next to each other. You can use backslash  to escape double quotes if you actually want to search for a
+string that includes quotes. And  will do the same for backslash.
+Boolean operations can be used. Use OR to match one or another. Use - to negate a query. The space
+character is used for boolean “and”.
+For example foo OR bar will find all notes that contain either of those words, they don’t have to
+be in the same note. foo -bar will find all notes that contain foo , but not if they also contain
+bar.
+Parenthesis can be used to group boolean operations. For example ((a OR b) (c OR d)). This can be
+useful when crafting complex searches to make sure things happen in the order you want.
+Regular expressions (regex) can now be used in search. Use forward slash to denote a regular expression.
+For example [a-z]{3}. Obsidian accepts the JavaScript flavor regular expressions. You can learn
+more about it here.
+```
+### Search operators
+
+Several special operators are available. Some operators allow nesting queries using parenthesis, for example
+file(to be OR -2B). You can use - to exclude specific results from search, for example foo -
+tag#bar.
+
+```
+file(...) will perform the following subquery on the file name. For example file.jpg. If you use
+Zettelkasten-style UIDs, this can be useful for narrowing a time range, for example file202007 for files
+created in July of 2020.
+path(...) will perform the following subquery on the file path, absolute from the root. For example
+pathDaily Notes2020-07.
+content(...) will perform the following subquery on the file content. For example contenthappy
+cat.
+match-case(...) and ignore-case(...) will override the case sensitive match logic for the
+following subquery.
+```
+
+```
+tag will search for your specified tag within a file, for example tag#work. This is faster and more
+accurate than searching for the tag in plaintext #work , as it uses the cached information and ignores text
+in code blocks and sections that aren’t markdown text.
+line(...) will perform the subquery on a line-by-line basis, rather than a file-by-file basis. For
+example, if you search for foo bar , this could match a file that has foo in the first paragraph and bar
+in the last paragraph. Searching for line(foo bar) will only match if foo and bar are on the same
+line.
+block(...) will perform the subquery on a block-by-block basis, where each block defined as a
+markdown block, typically separated by empty lines or list items. This is expensive computationally as it
+requires parsing each file, which means this is likely slower than other modes.
+section(...) will perform the subquery on a section-by-section basis, where each section is the text
+between two headings, including the first heading.
+task(...) will perform the subquery only on each [[Format your notes#Task listtask]] and on a block-
+by-block basis. Use task to match all tasks.
+task-todo(...) will perform the subquery only on each uncompleted [[Format your notes#Task
+listtask]] and on a block-by-block basis. Use task-todo to match all uncompleted tasks.
+task-done(...) will perform the subquery only on each completed [[Format your notes#Task
+listtask]] and on a block-by-block basis. Use task-done to match all completed tasks.
+```
+##### Note composer
+
+The Note composer plugin allows you to easily merge two note or extract part of a note into its own note.
+
+## Merge
+
+When working with the file, you can choose “Merge entire file with...” in the More Options menu.
+
+Alternatively, you can open [Command palette] and invoke the command “Note composer Merge current file
+with another file...”.
+
+This will bring up a menu to choose a file to merge into. Once you confirm the merge, all links to the current note
+will be updated to the merged file.
+
+The current note will be merged to the bottom by default; you can use Shift-Enter instead of Enter to
+merge it to the top.
+
+## Extract
+
+When selecting text, you can either right click on it, select “Extract current selection”, or use the [Command
+palette] to find the “Note composer Extract current selection...” command.
+
+Similar to merging, this will bring up a menu to choose a file to extract into. If no result can be found, a new note
+will be created. If you want to create a new note instead of using the first result, press Ctrl-Enter (or Cmd-
+Enter on macOS).
+
+## Options
+
+
+Note Composer has a few helpful plugin options.
+
+### Te x t a f t e r m o v i n g
+
+After you extract a piece of text, it’s often a good idea to leave a link to the new file. By default, a link is created.
+But you can also change this option to have an embed created for you, or insert nothing at all.
+
+### Te m p l a t e f i l e
+
+When merging or extracting, instead of just sending over the content, you can also apply a template file to it.
+
+This template file can contain the following variables
+
+```
+{{content}}  this is where the content will be placed. If you do not include this variable, the content will
+automatically be placed at the bottom of the template.
+```
+```
+{{fromTitle}}  the name of the note where the new note comes from.
+```
+```
+{{newTitle}}  the title of the new file. Convenient if you prefer to have a heading at the top of the file
+that’s the same as the file name.
+```
+```
+{{dateFORMAT}}  you can add multiple dates with your custom format. For example, you can do
+{{dateYYYY-MM-DD}} and it will resolve to the date or time when the note gets created.
+```
+### Confirm file merge
+
+Merging files will delete the file and is destructive, so by default we ask for your confirmation. If you prefer, you
+can choose to skip this confirmation.
+
+In case you accidentally merged something and want to get it back, consider using the [File recovery] plugin to
+recover it.
+
+##### File explorer
+
+The File explorer shows [[Accepted file formatsthe list of files Obsidian can recognize]] in your vault. You can
+open notes, [create notes] and folders, and [rename notes] in it. Right clicking on a note or directory in the File
+explorer will bring up appropriate options, such as renaming or making a copy. This is also the best way to set
+your default folder for when you [Embed files].
+
+It’s one of the crucial plugins that we recommend you to keep enabled.
+
+### Usage tips
+
+```
+1. If the list of files is cluttering the interface though, you can close it
+```
+![[Pasted image 15.png]]
+
+```
+1. You can drag and drop to put one file into another folder.
+```
+
+```
+2. You can use the sor t icon at the top to sor t files by file name or last modified time.
+```
+##### Backlinks
+
+The backlinks plugin shows how the current note is referenced in other notes.
+
+After enabling it, you’ll see the backlink count in the status bar.
+
+In the right side bar (if it’s expanded), you should also see a panel that shows where the current note gets linked
+
+![[Pasted image 9.png]]
+
+Upon expanding the “Unlinked mentions” section, you can also see where the name of the note gets mentioned,
+but not explicitly linked (in other words, mentioned without the square brackets).
+
+##### Te m p l a t e s
+
+The Templates plugin lets you quickly insert snippets of text into your current note.
+
+### Set up template folder
+
+Each template snippet is just a normal Markdown note, like everything else in Obsidian.
+
+To d e s i g n a t e t e m p l a t e f i l e s , p u t t h e m i n t o a fo l d e r, a n d c h o o s e t h a t fo l d e r i n S e t t i n g s =  Te m p l a t e s =  “ Te m p l a t e
+folder location” after enabling the plugin
+
+### Insert a template
+
+After setting up the folder location, using the ribbon icon to insert the template. As always, you can also set a
+hotkey for this option, or use the command palette to access it.
+
+The template snippet will be inserted in the current caret position, with special text replaced by their actual value
+at the time of the insertion (see below).
+
+### Insert title
+
+If you want to insert the title of a note, you can set it in a template with {{title}}.
+
+### Insert date and time
+
+In the plugin settings of Template, you can also set a date format and a time format.
+
+After setting these formats, {{date}} and {{time}} in the template files will be replaced by the formatting
+current time.
+
+For formatting syntax documentation, please see here.
+
+_Tip if you want to have two date formats or two time formats, you can use the other {{time}} as the second
+{{date}} , or {{date}} as the second {{time}}._
+
+
+### One-off date formats
+
+In addition to {{date}} and {{time}} , which will work in all template files, you can also write
+{{dateYYYY-MM-DD}} to insert a date with a certain format just once. This will override the {{date}}
+format. Anything after  will be considered part of the date format.
+
+{{timeHHmm}} works similarly.
+
+### Using custom date formats elsewhere
+
+Currently, dates like {{dateYYYY-MM-DD}} and {{timeHHmm}} also work in the template file of the [Daily
+notes] and [Zettelkasten prefixer] plugins. However, {{date}} and {{time}} do not work yet.
+
+##### Graph view
+
+Shows a graph representation of the [[Internal linkinternal links]] between your notes.
+
+Notes with more notes referencing it appear as bigger nodes on the graph.
+
+![[Pasted image 10.png]]
+
+### Visualization tips
+
+```
+You can hover each node to highlight its connec tions, fading ever ything else.
+You can drag nodes around to rear range the graph. This may be helpful if some nodes are overlaying
+others.
+```
+### Navigation tips
+
+```
+To zo o m , yo u c a n u s e m o u s e w h e e l s c ro l l , a s we l l a s t h e + and - keys.
+To p a n a ro u n d , d r a g t h e b a c kg ro u n d o r u s e t h e ke y b o a rd a r row ke ys.
+Hold Shift while navigating with the keyboard to speed things up.
+```
+### Custom CSS
+
+Since the graph is rendered using canvas and WebGL, [[Customizing CSSCSS]] is unable to affect things
+like nodes and links. To customize graph view, we have provided a way to convert CSS colors into WebGL
+commands.
+
+##### The following CSS classes are supported
+
+```
+.graph-view.color-fill
+.graph-view.color-fill-tag (theme-dependent)
+.graph-view.color-fill-attachment (theme-dependent)
+.graph-view.color-arrow
+```
+
+```
+.graph-view.color-circle
+.graph-view.color-line
+.graph-view.color-text
+.graph-view.color-fill-highlight
+.graph-view.color-line-highlight
+.graph-view.color-fill-unresolved
+```
+```
+theme-dependent means you may have to add .theme-dark or .theme-light to style it for different
+themes. See [[#Custom CSS#Defaults]] for explanation.
+```
+##### The following CSS rules are supported
+
+```
+.graph-view.color-class {
+ Supports all CSS color directives, like #HEX, rgb and rgba 
+color #FFF;
+color #FFFFFF;
+color rgb(0, 0, 0);
+color rgba(0, 0, 0, 1);
+ Opacity (similar to rgba) will make the color transparent 
+opacity 0.5;
+}
+```
+##### Defaults
+
+These CSS rules are the ones Obsidian use by default. You may override any of them using an identical or more
+specific CSS rule. This applies especially to .color-fill-tag and .color-fill-attachment As a last
+resort, add !important to the end of your rule.
+
+```
+.graph-view.color-fill,
+.theme-dark .graph-view.color-fill-tag,
+.theme-light .graph-view.color-fill-tag,
+.theme-dark .graph-view.color-fill-attachment,
+.theme-light .graph-view.color-fill-attachment,
+.graph-view.color-arrow,
+.graph-view.color-circle,
+```
+
+```
+.graph-view.color-line,
+.graph-view.color-text,
+.graph-view.color-fill-highlight,
+.graph-view.color-line-highlight,
+.graph-view.color-fill-unresolved {}
+```
+##### Ta g p a n e
+
+Adds a panel on the right that displays all the tags you have, along with their tag count.
+
+When clicking on a tag, a search for the tag is activated. To ==toggle a tag== in search, Ctrl-click it instead.
+
+### Sorting
+
+The tags are sorted from most frequently used to least frequently used. You can change the sort order to
+alphabetical or reverse it.
+
+### Nested tags
+
+If you write your tags like #inboxto-read and #inboxprocessing , you can enable “show nested tags” to
+view them as a tree instead of a flat list.
+
+Under the default flat view, the tag pane will look like
+
+- inboxto-read
+- inboxprocessing
+
+Under the nested tag view, the tag pane will look like
+
+- inbox
+- to-read
+- processing
+
+##### Zettelkasten prefixer
+
+Adds a new button to the left pane, which can be used to create a new file and prefix it for you using the current
+time. This can be beneficial if you are a follower of the Zettelkasten UID-in-filename method.
+
+The default format is 12-digit timestamp, e.g. “202001010000”.
+
+
+### Te m p l a t e s
+
+You can define a [[Templatestemplate file]] for your Zettelkasten notes. This file will be copied when a new
+Zettel note is created.
+
+For the Zettelkasten prefixer plugin, {{date}} and {{time}} do not work. Please use {{dateYYYY-MM-
+DD}} and {{timeHHmm}} in your template.
+
+##### Word count
+
+Word count is a simple plugin that shows the word count of your current note in the bottom status bar.
+
+It works for CJK characters too (Chinese, Japanese, and Korean), in which words are not separately by spaces
+but rather glued together.
+
+##### Outline
+
+The outline plugin shows the list of headings for the current note, and allows you to navigate to another section
+by clicking on a heading.
+
+##### Workspaces
+
+The Workspaces plugin lets you save and load “workspaces”. Each workspace includes pane layout, sidebar state
+(expanded or collapsed), and file open states.
+
+![[Pasted image 19.png]]
+
+### Save a workspace
+
+Either click on the workspace icon in the ribbon to open “Manage workspaces”.
+
+Give the current layout a new name, click on “Save”, and it will appear in the list below.
+
+### Load a workspace
+
+To l o a d o r re s t o re a wo r ks p a c e , e i t h e r o p e n “ M a n a g e wo r ks p a c e s ” a n d c l i c k o n t h e “ Lo a d ” b u t t o n n ex t t o t h e
+workspace you wish to load, or use the “Load workspaces” command to bring up a command-palette-like
+interface to search and choose workspaces.
+
+### Commands
+
+This plugin has two commands that you can access through [Command palette] manage workspaces and load
+workspaces. You can also define hotkeys for them.
+
+##### Publish
+
+The Publish plugin lets you publish notes from your vault onto your site, all from within the Obsidian app.
+
+For more information about the Obsidian Publish™ service, what’s included, how it works, and privacy, see the
+
+
+[Obsidian Publish] add-on service.
+
+### Enable the plugin
+
+From within Obsidian = Settings = Plugin, enable the Publish plugin. After that, a Publish icon (which looks like
+a paper plane) will appear in the ribbon pane.
+
+Once enabled, you can also set a hotkey for this option, or use the command palette to access it.
+
+### Set up and Configure your site
+
+Within the Publish plugin, you’ll see an option to create a site by entering a unique site ID. Once published, your
+site will be available at httpspublish.obsidian.md{site-id}.
+
+After creating a unique site ID, you’ll have the option to give your site a name, select a home page, set a theme,
+and toggle various components such as graph view, table of contents, etc. You can toggle these options by
+clicking on the gear icon near your site name at the top of the Publish plugin.
+
+### Select files for publishing
+
+After setting up your site, you can now publish your notes!
+
+With a fresh, empty site, all your notes will appear under the “New” section, meaning they are new to your site.
+At this point, you may choose which files you want to publish, and then click the “Publish” button.
+
+==Privacy note Obsidian Publish has no awareness (nor retention) of any notes you choose not to publish (nor
+any notes you subsequently remove from your published site).==
+
+##### YAML suppor t for Publish
+
+As of 0.12.12, you can use YAML to flag notes to be published. (You can read more about YAML in Obsidian
+[[YAML front matterhere]].)
+
+If you set publish true , then new files will be automatically selected the next time you publish changes.
+
+If you set publish false , then the file will not be visble when publishing changes, and will not show up in
+newchanged files. If this file had been previously published, you will see an option to delete it instead.
+
+If you do not use YAML to flag publish files, the default behaviour is to automatically select changed files, but not
+new files.
+
+### Make changes
+
+As you make changes to notes that have already been published, those changes will be automatically selected
+when you open the Publish plugin dialog. You may uncheck any files you wish not to publish to your site.
+
+### Change site options
+
+
+You can change various site options by clicking on the gear icon near your site name when in the “Publish
+changes” dialogue.
+
+##### Metadata
+
+In this section, you can set site name, home page file (the file visitors see when they land on your site), and
+manage custom domain (please see [[Obsidian Publish#Custom domainthis guide]] to set up your custom
+domain).
+
+##### Appearance
+
+Here you can change the theme between light and dark.
+
+If you want more customization, you can look into setting up [[Obsidian Publish#Custom CSScustom CSS]] and
+[[Obsidian Publish#Faviconfavicon]].
+
+##### Reading experience
+
+In this section, you can
+
+```
+Enable a special mode called “sliding windows” that looks like Andy Matuschak’s notes;
+```
+```
+Enable page preview on hover like when using [Page preview] plugin in the app;
+```
+```
+Configure whether you want readable line length and strict line breaks.
+```
+##### Components
+
+Your site comes with a few components that you can toggle on or off. These include
+
+```
+File explorer (default on)
+```
+```
+Local graph (default on)
+```
+```
+Outline (default off)
+```
+```
+Backlink at the bottom (default off)
+```
+```
+Search bar (default off, requires file explorer)
+```
+##### Security
+
+Here you can set passwords to protect your site. Once set, all visitors need to enter one of the passwords to
+enter your site.
+
+Multiple passwords facilitate sharing with multiple groups. When you no longer wish to share with one group of
+visitors, you can simply delete that password. Each password can be named for your convenience as well.
+
+As of 20210120, all notes on your site are protected by the same set of passwords.
+
+### Add linked notes
+
+
+The “Add linked” button allows you to include for publishing any notes in your vault that are referenced (linked
+to) by any currently selected notes. This is a good way to ensure there are no dead links on your published site.
+
+By way of example, let’s assume you select Note A for publishing. Supposing Note A has links to Note P, Note Q,
+and Note R, then if you click the “Add linked” button, Notes P, Q, and R will all be selected for publishing along
+with the currently selected Note A.
+
+Each time you click the “Add linked” button, the Publish plugin will look for links within every currently selected
+file to include for publication. Please be sure you review the list of selected files before clicking the “Publish”
+button.
+
+### Delete published notes
+
+You always have the option of removing any notes that have been published to your site. Within the Publish
+plugin, all published notes will be listed, of which anyall can be selected for removal. Deleting a note from your
+site does not remove the note from your vault, thus giving you the option to re-publish the note again in the
+future.
+
+### Delete entire site
+
+If you’d like to delete an entire site, click the switch-site (arrows) icon near the top of the Publish plugin. Then
+click the X button to delete your site. Note this only removes your public site but does not affect any files in your
+vault. You can always choose to re-publish your notes.
+
+##### Quick switcher
+
+The Quick switcher lets you jump to other notes without leaving your keyboard. The shortcut to invoke it is
+CtrlCmd+O. Just start typing, and matching filenames will be selected. Use up and down arrows to navigate
+the results, Enter to jump to a result, and Esc to exit the quick switcher. Holding down CmdCtrl will cause
+the note to open in a new pane.
+
+If you want to create a new note, typing a unique name will cause the Quick Switcher to create it. If the name is
+similar enough to an existing note, the Quick Switcher will default to opening the original note. To avoid this,
+holding down shift will force creation of a new note with whatever name is in the Quick Switcher. This can be
+combined with CmdCtrl to create the new note in a new pane.
+
+![[Pasted image 11.png]]
+
+Before you enter anything, the top 5 most recently visited notes will be shown, so it’s also useful to quickly
+switch two notes by doing CtrlCmd+O → Down arrow → Enter.
+
+##### File recovery
+
+File recovery is a core plugin to help you recover your data in case of all kind of accidents - user error, power
+outage, or misbehaving plugins and scripts.
+
+File recovery is default to enabled, because it’s too late to enable when you’ve already lost data.
+
+
+## How it works
+
+### Snapshots
+
+As long as this plugin is enabled, full snapshots of what you’re working on get saved at fixed intervals (you can
+configure this interval). Snapshots get deleted after a fixed amount of retention time.
+
+This process is automatic. By default, snapshots are made every 5 minutes, and snapshots are kept for 7 days.
+
+### Recovering
+
+In case of data loss, here’s how you can find saved snapshots
+
+```
+1. Open settings;
+```
+```
+2. Open the “File recovery” tab under “Plugin options”;
+```
+```
+3. Click on the “View” button in “Snapshots” section;
+```
+```
+4. In the search bar on the left, enter the name of file you want to recover. If the file name does not show it, it
+means no snapshots were saved for that file;
+```
+```
+5. After selecting a file in the dropdown, a list of snapshots will appear on the left. Select the one you want to
+recover;
+```
+```
+6. The content of that snapshot will show up on the right. You can click “Copy to clipboard” to copy the whole
+thing, or cherry-pick some of the content.
+```
+## Options
+
+### Snapshot interval
+
+Minimal number of minutes between two snapshots. Default is 5 minutes.
+
+### History length
+
+Number of days to keep snapshots around for. Default is 7 days.
+
+### Clear history
+
+You also have the option to wipe all histor y. ==Please be careful as this ac tion is ir reversible.==
+
+## Data storage
+
+The file recovery data is stored in [[How Obsidian stores data#System directorysystem directory]] in case of
+vault malfunctioning.
+
+
+Please note that vaults are identified by their absolute path. If you’ve moved vault, you will need to move it back
+to its previous position in order to restore the snapshots while the vault was there.
+
+##### Markdown format converter
+
+It allows you to convert from other variations of Markdown format and link convention to Obsidian format.
+
+Right now you can convert
+
+```
+Roam #tags to [tags]
+```
+```
+Roam ^^highlight^^ to ==highlight==
+```
+```
+Bear highlight to ==highlight==.
+```
+```
+Zettelkasten [[UID]] links to full links [[UID File Name]]
+```
+```
+Zettelkasten [[UID]] links to pretty links [[UID File NameFile Name]] , which will show up as just
+File Name
+```
+### Related
+
+```
+[Format your notes]
+```
+##### Outgoing links
+
+The Outgoing Links plugin shows the links from the current note at a glance, as well as potential links to be
+made. If you’re familiar with the [Backlinks] plugin, you can think of outgoing links as the opposite direction of
+backlinks.
+
+After enabling the plugin, you should see a new pane in the right sidebar, which contains two sections “Links”
+and “Unlinked mentions”.
+
+### Links
+
+The Links sections show links to other files, headings, and blocks. Clicking on a link will take you to that file.
+
+Each type will have its own icon for you to distinguish them; links to files that are not created yet have special
+icons.
+
+Underneath the title, you can also see the folder path of each file.
+
+### Unlinked mentions
+
+If any text in the current note matches the name or [[Add aliases to notealias]] of another note in your vault, you
+can see the context, highlighted match, and a button to Link it under “Unlinked mentions”.
+
+When you hover over the button, it will show the full path of the file if it’s not in the vault root. If you have multiple
+files of the same name, this can help you distinguish them.
+
+
+##### Random note
+
+Random note does just that, opens a note at random from your Vault. Many people find this useful for surfacing
+thoughts they had not considered in a long time, or spot checking for things that they may have forgotten to link.
+
+After you enable the Random Note plugin, you can create a [[Custom hotkeyscustom hotkey]] that opens a note
+at random.
+
+##### Core plugins
+
+One of the most powerful aspects of [Obsidian] is the ability to add new functionality via plugins. It comes with
+several already, and many more are in development.
+
+You can also build your own Obsidian plugin. See [Community plugins].
+
+Plugins can be managed through the “Settings” button on the bottom left. Some of them have settings of their
+own that can be configured by clicking on the gear that appears next to each plugin when it is activated.
+
+### Current list of core plugins
+
+```
+1. [File explorer]
+```
+```
+2. [Search]
+```
+```
+3. [Quick switcher]
+```
+```
+4. [Graph view]
+```
+```
+5. [Backlinks]
+```
+```
+6. [Outgoing links]
+```
+```
+7. [Ta g p a n e]
+```
+```
+8. [Page preview]
+```
+```
+9. [Daily notes]
+```
+```
+10. [Te m p l a t e s]
+```
+```
+11. [Note composer]
+```
+```
+12. [Command palette]
+```
+```
+13. [Starred notes]
+```
+```
+14. [Markdown format converter]
+```
+```
+15. [Zettelkasten prefixer]
+```
+```
+16. [Random note]
+```
+```
+17. [Outline]
+```
+```
+18. [Word count]
+```
+
+```
+19. [Slides]
+```
+```
+20. [Audio recorder]
+```
+```
+21. [Open in default app]
+```
+```
+22. [Workspaces]
+```
+```
+23. [File recovery]
+```
+```
+24. [Publish]
+```
+```
+25. [[Obsidian SyncSync]]
+```
+##### Page preview
+
+Page preview lets you preview a page when hovering an internal link, without needing to actually navigate to that
+page.
+
+![[Pasted image 13.png]]
+
+This works on the preview pane. In the editor, you can hover a link while holding CtrlCmd , which will open the
+preview too.
+
+##### Starred notes
+
+Starred notes are a convenient way of keeping important notes close at hand. Enabling the plugin will create a
+star icon on the left panel, which brings up a list of starred notes.
+
+To s t a r a f i l e , yo u h ave s e ve r a l o p t i o n s. Yo u c a n d o s o f ro m a r i g h t c l i c k i n t h e f i l e ex p l o re r, a c l i c k o n t h e o p t i o n s
+menu of an open note, typing in the [command palette], or a hotkey that can be set in [Use hotkeys].
+
+Starred files and searches can be reordered by dragging them around.
+
+##### Daily notes
+
+Daily Notes will create a new note that is automatically named with the current date. If it already exists, it will
+open that note. This is a useful way to create a daily log, todo list, or a list of links to notes that you have created
+on a specific day.
+
+The date format and default folder for Daily Notes can be set in Settings = Plugins, by clicking the gear next to
+the name. The default date format is “YYYY-MM-DD” (ISO format). This format means that a list of daily notes,
+listed in alphabetical order, will also be in chronological order.
+
+You can create a Daily Note either by clicking on the calendar icon in the left panel, or with the [Command
+palette]. You can also set a hotkey in [Use hotkeys].
+
+### Te m p l a t e s
+
+You can define a [[Templatestemplate file]] for daily notes. This file will be copied into your daily note when it ’s
+created, so it’s a good place to put tags or links you use every day.
+
+
+For the daily notes plugin, {{date}} and {{time}} do not work. Please use {{dateYYYY-MM-DD}} and
+{{timeHHmm}} in your template.
+
+##### Command palette
+
+The Command Palette is enabled by default, as it is a very useful way to access nearly all the features of
+Obsidian without having to remember key strokes. Type CtrlCmd+P to activate, then simply type in the name
+of the command. If a command has a hotkey, it will appear in on the right side.
+
+Custom shorcuts can be added to the Command Palette in Settings = Hotkeys. Click on the  icon to the right
+of each key listed and type whatever key combination you would like.
+
+### Settings
+
+##### Pinned commands
+
+You can set a few pinned commands that will appear at top of the command palette. This lets you choose them
+without typing anything. It’s a good place to put your most frequently used commands.
+
+Pinned commands are managed on the Command palette options screen under Plugin Options. You can add
+pinned commands by entering the name in the “New pinned command” field. After you pick a command and hit
+Enter , the command will be added to the list above. You can reorder the list or delete existing pinned
+commands in the list.
+
+### Usage tips
+
+```
+To s e e a l i s t o f a l l c o m m a n d s a l o n g w i t h t h e i r s h o r t c u t , d o n ’ t t y p e a ny t h i n g i n t o t h e p ro m p t. T h e a r row ke ys
+will move up and down the list, and Return will activate the command.
+```
+```
+Search in the command palette is fuzzy, so you can type part of the word to get matches. For example, you
+can use trm to search for “Toggle read mode”.
+```
+##### Audio recorder
+
+Audio recorder is a plugin that lets you make a recording without leaving Obsidian. It’s useful for class and
+meeting notes when you can’t catch up for some reason, or for recording important discussions so you don’t
+miss any details.
+
+To u s e , s i m p l y c l i c k o n t h e m i c ro p h o n e i c o n i n t h e l e f t p a n e l 
+
+![[Pasted image 8.png]]
+
+The microphone will become colored while it’s actively recording.
+
+Click on it again to finish recording. The audio file is now saved in your [[vault]] and an embed the recording will
+be added to the end of your current note.
+
+##### Open in default app
+
+
+Opens the current file with default app on your computer. You can access it at the top right corner of the file top
+bar
+
+![[Pasted image 5.png]]
+
+It’s useful for editing images or annotating PDFs, among other things.
+
+### User interface
+
+##### Workspace
+
+Title bar
+
+Title bar is the bar at the very top of Obsidian.
+
+### Window title
+
+The window title, which is the text at the very center of the title bar, indicates the name of the current vault, as
+well as the current version number.
+
+### Navigation
+
+At the left end of the title bar, there are two arrow buttons that let you go back and forward. Because how
+common they are used, we recommend using the hotkeys instead.
+
+### Window management
+
+At the right end of the title bar, you have the buttons to
+
+```
+Minimize the window;
+```
+```
+Maximize the window if it’s not maximized, or restore previous size if maximized;
+```
+```
+Close the window.
+```
+### Native title bar
+
+The title bar in Obsidian is custom-built and may not have feature parity with the native title bar that you’re used
+to on your operating system.
+
+Currently you can’t disable the custom title bar. If it would be helpful to you, consider echoing your voice in this
+feature request.
+
+Workspace
+
+The workspace in [Obsidian] contains the follow components
+
+```
+[Title bar]
+[[SidebarSidebars]]
+```
+
+```
+[[Sidebar#PanesSidebar panes]]
+[[Sidebar#TabsSidebar tabs]]
+[Ribbon] (left sidebar only)
+```
+```
+[[Pane layoutPanes]]
+```
+```
+[Status bar]
+```
+Sidebar
+
+Obsidian has two sidebars on both left and right. The left sidebar includes the [Ribbon].
+
+## Open hidden sidebars
+
+If a sidebar collapsed, you can open it by clicking on the Arrow icon to expand it.
+
+This commonly happens when you enable a plugin but cannot find it anywhere–chances are the new pane
+created by the plugin is hidden in one of the sidebars. So be sure to check there!
+
+## Ta b s
+
+By default, plugins will only create new tabs instead of new [[#Panes]].
+
+You can switch between tabs by clicking on the icon. A tooltip will also appear to help you identify tabs.
+
+In each pane, you can only see one tab at every given moment. Some actions will automatically bring a tab into
+view, for example when you click on a tag.
+
+### Close tabs
+
+Some tabs can be closed via the right click menu, but some cannot be closed. If you don’t want to see it,
+consider disable the relevant plugin or collapse the sidebar by clicking on the Arrow icon.
+
+### Rearrange tabs
+
+As of July 2021, there’s no way to rearrange the tabs. If you’d find this handy, echo your voice in this feature
+request.
+
+## Panes
+
+You can have multiple panes in the sidebar.
+
+### Create panes
+
+To g e t a n e w p a n e , d r a g t h e i c o n o f a t a b t o a b ove o r b e l ow a c u r re n t p a n e. T h e h i g h l i g h t e d a re a w i l l i n d i c a t e
+where the new pane will be created.
+
+
+### Close panes
+
+To c l o s e a p a n e , yo u c a n [[#Close tabsclose all tabs in it]], or drag all tabs in it by their icons and drop them into
+an existing pane.
+
+When only the tab area of a pane is highlighted, the tab being dragged will be dropped into that pane to merge
+with other tabs in that pane.
+
+Status bar
+
+The status bar shows handy information. That include helpful information about the current file, the current vault,
+or the current status like time and date.
+
+Status items are added both by [[Core pluginscore plugins]] and [community plugins].
+
+Some items are interactive but some are purely informational. For example, the [Word count] plugin adds the
+word and character count that’s not clickable, and the [[Obsidian SyncSync plugin]] adds an icon that both
+shows the sync status as well as shows the sync log upon being clicked.
+
+Panes
+
+Pane layout
+
+One of the things that makes [Obsidian] different from other note-taking apps is how easy it is to open multiple
+files in your preferred configuration.
+
+The window a file gets opened in is what we call a “pane”. You can have as many panes as you like.
+
+### Open new panes
+
+##### Open links
+
+In general, you can click a link to a file while holding Ctrl (on Windows and Linux) or Cmd (on macOS) to open it
+in a new pane. This includes clicking on files in [File explorer], [Search] results, [Backlinks], [Graph view], etc.
+
+The only notable exception is in the editor. Because in the editor, a single click edits the link text rather than
+following it, CtrlCmd-Click is used to follow the link. Therefore, you’ll need to hold Shift in addition to
+CtrlCmd in order to open the link in a new pane.
+
+##### Split current pane
+
+You can also use the “More options” menu option of a pane to selec t “Split ver tically” or “Split horizontally” to
+open two copies of that file.
+
+##### Open linked views
+
+Some options in the “More options” menu will also open a new pane that’s linked to the current pane, such as
+“Open backlinks” and “Open local graph”.
+
+
+### Rearrange panes
+
+To m ove a p a n e , s i m p l y d r a g t h e p a n e i c o n i n t h e t o p l e f t c o r n e r o f t h e p a n e. A s yo u d r a g i t a ro u n d , a v i s u a l
+indicator will appear to show where the pane will be placed. Dropping onto each of the four sides of an existing
+pane creates a horizontal or vertical split, and dropping in the center swaps positions with the target pane.
+
+You can also drag panes into the two sidebars. Panes in the sidebar work a bit differently, for more please see
+the [[#Panes in the sidebar]] section below.
+
+### Panes in the sidebar
+
+There are some differences with panes that live in the [[Sidebarsidebars]].
+
+##### Sidebar panes can share space with tabs
+
+When your drop a pane onto a sidebar pane, a new tab will be created under that sidebar section. Different
+panes in the same sidebar section can be accessed by clicking on its tab icon.
+
+##### Sidebar panes do not show titles
+
+This reduces clutter, but also means it’s best to keep one or two important files like a scratch pad or the daily
+note for quick access, rather than having a dozen files open.
+
+To s e e t h e t i t l e o f a f i l e t h a t ’s i n t h e s i d e b a r, h ove r ove r i t s t a b i c o n.
+
+##### Sidebar can be easily collapsed
+
+If there are panes that you only need to look at from time to time, having them in the sidebar makes it really easy
+to toggle them with a hotkey or command.
+
+##### To g g l e e d i t o r a n d p r e v i e w i n s i d e b a r
+
+The hotkey to toggle between editor and preview only works in the main workspace. In the sidebar, you’ll need to
+right click on the tab icon and select “Preview” or “Edit” to toggle between two modes.
+
+### Save and load pane layouts
+
+The [Workspaces] plugin makes it easy to come back to a particular pane layout. Give it a try!
+
+Linked pane
+
+Panes can be linked together. This has two main effects
+
+```
+By default, when opening a new [[Preview and edit modespreview pane]] from an editing pane, the new
+pane is linked to the old one. This means that any changes you make in the editor will show up in the
+preview in real time. It also means that scrolling one will scroll the other.
+```
+
+```
+When a new [[Working with backlinksBacklink Pane]] is created from a note, it will be linked to that note.
+This means that [backlinks] will always be shown for the note that is in that pane. This is useful if you want
+to reference a set of [backlinks] but let the regular backlink panel change with whatever other note you are
+working on.
+```
+Linked panes will be marked with a link icon. You can hover the link to see which pane it’s linked to, or click the
+icon to release it, so that they are no longer linked. This will not close the previously-linked pane.
+
+Ribbon
+
+The ribbon is a space for common commands that occupies the vertical space at the very left of the interface.
+It’s part of the left [Sidebar] and is always visible, even if the left sidebar is closed.
+
+## Actions
+
+Each action is presented by an icon in the ribbon. Hovering them will present a tooltip; clicking or tapping them
+will activate the action.
+
+The top ones are added by plugins, both [[Core pluginscore plugins]] and [community plugins].
+
+The bottom three actions are Obsidian system actions to
+
+```
+1. Open another vault;
+```
+```
+2. Get help (opens [[help vault]] on the [[desktop app]] and opens [[online help]] in the [[Obsidian
+Mobilemobile app]]);
+```
+```
+3. Open settings.
+```
+##### Vault switcher
+
+Vault switcher lets you switching between existing vaults and create new vaults.
+
+## Open vault switcher
+
+To o p e n t h e va u l t sw i t c h e r, c l i c k o n t h e va u l t i c o n a t t h e b o t t o m g ro u p o f t h e [Ribbon] actions. The tooltip text
+should say “Open another vault”.
+
+You can see the [[#current vault list]] and [[#create new vaults]] here. Because this is the first screen new users
+see, it also displays name of the program and the [current version], along with a dropdown to switch [Interface
+language].
+
+## Current vault list
+
+On the left side of the vault switcher, you can see all the vaults you have accessed before on this device. For
+each vault, you can see the name of that vault (which is the name of the vault folder), and the path to that folder.
+
+Clicking on a vault in this list will open that vault. The cross icon lets you delete the vault from this list.
+
+
+```
+Note deleting a vault from this list will not delete the vault folder from your device. It will be “forgotten”
+and removed from the list.
+```
+## Create new vaults
+
+Vaults can be created in two ways
+
+```
+1. Choose “Create new vault” and enter the name of the vault along with where it will be stored. Essentially
+Obsidian creates an empty folder in that location and open it as a vault for you;
+```
+```
+2. Choose “Open folder as vault” and select a folder on your device. This is the recommended method if you
+already have a backup or exported folder of Markdown files.
+```
+```
+1. meaningful! ↩
+```
+```
+2. Here’s one with multiple paragraphs and code.
+```
+```
+Indent paragraphs to include them in the footnote.
+```
+```
+{ my code }
+```
+```
+Add as many paragraphs as you like.
+md You can also use inline footnotes. ^[notice that the carat goes outside of the
+brackets on this one.] You can also use inline footnotes. ^[notice that the carat goes outside of the
+brackets on this one.] ↩
+```
+
