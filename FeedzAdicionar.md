@@ -33,8 +33,18 @@ try {
   let dataDeAdmisao = extractData(/Admissão - (.+?)$/m);
   let cargo = capitalizeWords(extractData(/Cargo - (.+?)$/m));
   let gestor = capitalizeWords(extractData(/Gestor - (.+?)$/m));
+
+  function normalizarSituacao(texto) {
+    const t = (texto || "").trim().toLowerCase();
+    if (t.startsWith("ativo")) return "Ativo";
+    if (["desligado", "desativado", "inativo"].some(x => t.startsWith(x))) {
+      return "Inativo";
+    }
+    return "Ativo";
+  }
+
   let id = extractData(/ID - (.+?)$/m);
-  let situacao = capitalizeWords(extractData(/Situa(?:ção|cao) - (.+?)$/m, "Ativo"));
+  let situacao = normalizarSituacao(extractData(/Situa(?:ção|cao) - (.+?)$/m, "Ativo"));
 
   let birthday = formatDateToISO(dataDeNascimento);
   let admissao = formatDateToISO(dataDeAdmisao);
@@ -69,26 +79,34 @@ try {
       '```meta-bind-button',
       'label: Editar Perfil',
       'icon: ""',
-      'hidden: false',
-      'class: ""',
-      'tooltip: "Abrir Feedz"',
-      'id: "Editar Perfil"',
       'style: primary',
+      'class: ""',
+      'cssStyle: ""',
+      'backgroundImage: ""',
+      'tooltip: Tooltip',
+      'id: EditarPerfil',
+      'hidden: false',
       'actions:',
-      `  - open: https://app.feedz.com.br/empresa/colaboradores/${idValue}`,
+      '  - type: open',
+      `    link: https://app.feedz.com.br/empresa/colaboradores/${idValue}`,
+      '    newTab: true',
       '```',
       '',
       'BUTTON[Ver Perfil]',
       '```meta-bind-button',
       'label: Ver Perfil',
       'icon: ""',
-      'hidden: false',
-      'class: ""',
-      'tooltip: "Ver Perfil Feedz"',
-      'id: "Ver Perfil"',
       'style: secondary',
+      'class: ""',
+      'cssStyle: ""',
+      'backgroundImage: ""',
+      'tooltip: Tooltip',
+      'id: VerPerfil',
+      'hidden: false',
       'actions:',
-      `  - open: https://app.feedz.com.br/colaboradores/${idValue}/perfil`,
+      '  - type: open',
+      `    link: https://app.feedz.com.br/colaboradores/${idValue}/perfil`,
+      '    newTab: true',
       '```'
     ].join('\n');
   }
